@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import headerImg1 from './img/header-img-1.svg'
 import headerImg2 from './img/header-img-2.svg'
+import ProductItem from './components/ProductItem'
 
 const Home = () => {
   return (
@@ -59,6 +60,21 @@ const Home = () => {
                     <button className='btn btn-black'>SHOP NOW</button>
                 </div>
 
+            </div>
+        </div>
+
+
+        <div className="featured">
+            <strong className='title'>Featured Product</strong>
+            <div className="products">
+                <ProductItem className='active' />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
             </div>
         </div>
 
