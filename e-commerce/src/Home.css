@@ -1,6 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --clr-showcase-bg: #E6E6E6;
-    --clr-bg: #fff;
     --clr-title: #222529;
     --clr-pink: #FF7373;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+
+/* HOME - HEADER */
+.header {
+    background-color: var(--clr-showcase-bg);
+    height: 85vh;
+}
+.header .container {
+    width: 90%;
+    margin: 0 auto;
+}
+.header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-block: 1rem;
+}
+.header .menu .brand {
+    color: var(--clr-title);
+    font-size: 35px;
+    font-weight: bold;
+}
+.header .menu .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.header .menu .nav-links a {
+    color: var(--clr-title);
+    font-size: 16;
+    text-decoration: none;
+}
+.active {
+    color: var(--clr-pink);
+}
+.header .menu .menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header .menu .menu-icons i {
+    padding: .5rem;
+    background-color: white;
+    border-radius: 50%;
+
+    position: relative
+}
+.number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    width: 15px;
+    height: 15px;
+    font-size: xx-small;
+    background-color: var(--clr-pink);
+    border-radius: 50%;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+    color: var(--clr-title);
+}
+.showcase img {
+    height: 73vh;
+}
+.showcase .text h1 {
+    font-weight: 800;
+    font-size: 65px;
+}
+.showcase .text p {
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    /* width: 7rem; */
+    /* padding: .5em; */
+    border: 1px solid white;
+    width: 188px;
+    height: 60px;
+}
+.btn-pink {
+    /* outline: 6px solid var(--clr-pink); */
+    color: white;
+    background-color: var(--clr-pink);
 }
