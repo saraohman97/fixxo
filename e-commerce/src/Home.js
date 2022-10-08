@@ -78,6 +78,22 @@ const Home = () => {
             </div>
         </div>
 
+        <div className="third-showcase">
+            <div className="container">
+
+                <div className="pamela">
+                    <h2 className='clr-white'>Pamela Reif's <br />Top Picks</h2>
+                    <button className='btn btn-black'>SHOP NOW</button>
+                </div>
+
+                <div className="conscious">
+                    <h2>Let's Be <br />Conscious</h2>
+                    <button className='btn'>FLASE SALE</button>
+                </div>
+
+            </div>
+        </div>
+
 
     </div>
   )

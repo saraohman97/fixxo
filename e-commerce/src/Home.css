@@ -120,9 +120,9 @@ body {
 
 
 
-/* HOME - SHOWCASE 2 */
+/* HOME - SECOND SHOWCASE */
 .second-showcase {
-    margin-block: 2rem;
+    margin-block: 3rem;
 }
 .second-showcase .container {
     display: flex;
@@ -172,7 +172,7 @@ body {
     width: 50%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .featured .products {
     display: grid;
@@ -188,9 +188,6 @@ body {
 .product-item {
     position: relative;
 }
-/* .product-item:hover {
-    display: show;
-} */
 .product-item .gray-box {
     width: 220px;
 }
@@ -213,4 +210,52 @@ body {
 }
 .featured-icons {
     display: none;
+}
+
+
+
+/* HOME - THIRD SHOWCASE */
+.third-showcase .container {
+    display: flex;
+    gap: 1rem;
+    height: 270px;
+    margin-bottom: 3rem;
+}
+
+.third-showcase .pamela {
+    background-image: url(./img/showcase-img-3.svg);
+    background-color: rgb(117, 104, 88);
+    width: 100%;
+    background-size: contain;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    font-size: x-large;
+}
+.clr-white {
+    color: white;
+}
+.third-showcase .pamela button {
+    margin-right: 3rem;
+}
+.third-showcase .conscious {
+    background-image: url(./img/showcase-img-4.svg);
+    background-color: rgb(217, 217, 217);
+    width: 100%;
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    font-size: x-large;
 }
