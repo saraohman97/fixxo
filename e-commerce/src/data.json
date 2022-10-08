@@ -1,4 +1,5 @@
-{"blog":[{
+{"blog":[
+    {
     "type": "Blog",
     "image": "http://example.com/images/image.jpg",
     "url": "http://example.com/blog/post",
