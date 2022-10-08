@@ -95,6 +95,40 @@ const Home = () => {
         </div>
 
 
+        <div className="our-speciality">
+            <div className="container">
+                <strong className='title'>Our Speciality</strong> <br /><br />
+
+                <div className="box-container">
+                    <div className="box-group">
+                        <div className="box">
+                            <p>Track Your Order</p>
+                            <small>Get Started <i className="fa-solid fa-chevron-right"></i></small>
+                        </div>
+                        <div className="box-gray"></div>
+                    </div>
+
+                    <div className="box-group">
+                        <div className="box">
+                            <p>Make a Return</p>
+                            <small>Get Started <i className="fa-solid fa-chevron-right"></i></small>
+                        </div>
+                        <div className="box-gray"></div>
+                    </div>
+
+                    <div className="box-group">
+                        <div className="box">
+                            <p>Request a Price <br />Adjustment</p>
+                            <small>Get Started <i className="fa-solid fa-chevron-right"></i></small>
+                        </div>
+                        <div className="box-gray"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
     </div>
   )
 }
