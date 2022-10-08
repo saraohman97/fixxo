@@ -1,0 +1,41 @@
+{"blog":[{
+    "type": "Blog",
+    "image": "http://example.com/images/image.jpg",
+    "url": "http://example.com/blog/post",
+    "title": "My Blog post",
+    "blogBody": "Paste the body of your content in here in plaintext",
+    "datePublished": "2019-02-11T11:11:11",
+    "copyrightYear": "2019",
+    "author": "Patrick Coombe",
+    "tag": ["" , ""],
+    "blogCatagories" :["Team","Fashion"] ,
+    "mainEntityOfPage": "True"
+},
+{
+    "type": "Blog",
+    "image": "http://example.com/images/image.jpg",
+    "url": "http://example.com/blog/post",
+    "title": "My Blog post",
+    "blogBody": "Paste the body of your content in here in plaintext",
+    "datePublished": "2019-02-11T11:11:11",
+    "copyrightYear": "2019",
+    "author": "Patrick Coombe",
+    "tag": ["" , ""],
+    "blogCatagories" :["Team","Fashion"] ,
+    "mainEntityOfPage": "True"
+}
+,
+{
+    "type": "Blog",
+    "image": "http://example.com/images/image.jpg",
+    "url": "http://example.com/blog/post",
+    "title": "My Blog post",
+    "blogBody": "Paste the body of your content in here in plaintext",
+    "datePublished": "2019-02-11T11:11:11",
+    "copyrightYear": "2019",
+    "author": "Patrick Coombe",
+    "tag": ["" , ""],
+    "blogCatagories" :["Team","Fashion"] ,
+    "mainEntityOfPage": "True"
+}]
+}
