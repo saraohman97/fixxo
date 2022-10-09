@@ -97,8 +97,11 @@ body {
     padding: .5rem;
     background-color: white;
     border-radius: 50%;
-
     position: relative
+}
+.header .menu .menu-icons i:hover {
+    background-color: var(--clr-title);
+    color: white;
 }
 .number {
     position: absolute;
@@ -212,6 +215,11 @@ body {
 .product-item {
     position: relative;
 }
+.product-item:hover .quick-view,
+.product-item:hover .featured-icons i,
+.product-item:hover .layer {
+    display: block;
+}
 .product-item .gray-box {
     width: 220px;
 }
@@ -224,15 +232,46 @@ body {
 
 .quick-view {
     position: absolute;
-    top: 148px;
+    top: 138px;
     display: none;
 
     width: 100%;
-    padding-block: 1rem;
+    padding-block: .7rem;
+    font-weight: 200;
+    font-size: small;
     background-color: var(--clr-pink);
     color: white;
+    z-index: 1;
 }
 .featured-icons {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    
+    color: var(--clr-title);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.featured-icons i {
+    padding: .5rem;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 1px 5px 10px rgb(177, 177, 177);
+    display: none;
+    z-index: 1;
+}
+.featured-icons i:hover {
+    background-color: var(--clr-title);
+    color: white;
+}
+.layer {
+    background-color: rgba(0, 0, 0, 0.149);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 6.4rem;
     display: none;
 }
 
@@ -321,5 +360,4 @@ body {
     background-color: #BBBBBB;
     width: 190px;
     height: 190px;
-
 }
