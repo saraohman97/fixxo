@@ -3,7 +3,7 @@ import React from 'react'
 const ProductDetails = () => {
 
   return (
-    <div className="container">
+    <div className="intro-container">
       <div><h1 className='promo'>Get 25% OFF at the Fixxo selection-shop Now!</h1></div>
       <div className="home">
         <ul className='home-list'>
@@ -101,64 +101,64 @@ const ProductDetails = () => {
       </div>
       <div className="related-pdts-img">
         <div className="card">
-          <img src="https://via.placeholder.com/200" alt="" />
-         <div className="category">
-         <p>Category</p>
-          <p>Modern Black Blouse</p>
-          <div className="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+          <img src="https://via.placeholder.com/210" alt="" />
+          <div className="category">
+            <p>Category</p>
+            <p>Modern Black Blouse</p>
+            <div className="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p className="price">$35.00</p>
           </div>
-          <p className="price">$35.00</p>
-         </div>
         </div>
         <div className="card">
-          <img src="https://via.placeholder.com/200" alt="" />
-         <div className="category">
-         <p>Category</p>
-          <p>Modern Black Blouse</p>
-          <div className="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+          <img src="https://via.placeholder.com/210" alt="" />
+          <div className="category">
+            <p>Category</p>
+            <p>Modern Black Blouse</p>
+            <div className="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p className="price">$35.00</p>
           </div>
-          <p className="price">$35.00</p>
-         </div>
         </div>
         <div className="card">
-          <img src="https://via.placeholder.com/200" alt="" />
-         <div className="category">
-         <p>Category</p>
-          <p>Modern Black Blouse</p>
-          <div className="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+          <img src="https://via.placeholder.com/210" alt="" />
+          <div className="category">
+            <p>Category</p>
+            <p>Modern Black Blouse</p>
+            <div className="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p className="price">$35.00</p>
           </div>
-          <p className="price">$35.00</p>
-         </div>
         </div>
         <div className="card">
-          <img src="https://via.placeholder.com/200" alt="" />
-         <div className="category">
-         <p>Category</p>
-          <p>Modern Black Blouse</p>
-          <div className="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+          <img src="https://via.placeholder.com/210" alt="" />
+          <div className="category">
+            <p>Category</p>
+            <p>Modern Black Blouse</p>
+            <div className="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p className="price">$35.00</p>
           </div>
-          <p className="price">$35.00</p>
-         </div>
         </div>
       </div>
     </div>
