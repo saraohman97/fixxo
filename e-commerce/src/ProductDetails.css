@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background-color: #ff7373; */
   margin: 0 20rem;
 }
 div .promo {
@@ -18,6 +21,7 @@ div .promo {
 .home-list {
   list-style: none;
   display: flex;
+  margin-bottom: 2rem;
 }
 
 .home-list li {
@@ -111,4 +115,58 @@ select {
 .small-img {
   /* margin-right: 33.4px; */
   margin-right: 7px;
+}
+
+.product-description ul.steps-list {
+  list-style-type: none;
+  display: flex;
+  width: 50%;
+  margin-top: 2rem;
+  border-bottom: 1px solid grey;
+}
+
+.product-description ul.steps-list li {
+  margin-right: 0.8rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+li.active {
+  color: #ff7373;
+  border-bottom: 1px solid #ff7373;
+}
+
+.steps {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.steps p {
+  margin-bottom: 1rem;
+}
+
+.steps ul {
+  margin: 0;
+}
+
+.related-pdts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.related-pdts p {
+  font-weight: 700;
+}
+.related-pdts div button {
+  margin-right: 0.5rem;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.related-pdts-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
 }

@@ -71,6 +71,96 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
+      <div className="product-description">
+        <ul className='steps-list'>
+          <li className='active'>Description</li>
+          <li>Additional</li>
+          <li>Shopping & Returns</li>
+          <li>Reviews</li>
+        </ul>
+        <div className='steps'>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis aspernatur, adipisci numquam pariatur odio magni, quidem facilis omnis porro nisi ducimus maiores natus hic sint ipsum ex non sequi officia exercitationem animi neque eum atque? Quas ipsam adipisci velit vel temporibus perferendis, porro dolorem quae cum saepe ipsa deleniti!
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, animi.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, eos.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, blanditiis.</li>
+          </ul>
+          <p style={{ marginTop: "1rem" }}>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta neque dolorem aperiam hic at? Rerum harum numquam dolorem, vitae perspiciatis eveniet, nemo qui, fuga quae maxime earum porro. Iusto, sed.
+          </p>
+        </div>
+      </div>
+      <div className="related-pdts">
+        <p>Related Products</p>
+        <div>
+          <button><i class="fa-solid fa-less-than"></i></button>
+          <button><i class="fa-solid fa-greater-than"></i></button>
+        </div>
+      </div>
+      <div className="related-pdts-img">
+        <div className="card">
+          <img src="https://via.placeholder.com/200" alt="" />
+         <div className="category">
+         <p>Category</p>
+          <p>Modern Black Blouse</p>
+          <div className="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p className="price">$35.00</p>
+         </div>
+        </div>
+        <div className="card">
+          <img src="https://via.placeholder.com/200" alt="" />
+         <div className="category">
+         <p>Category</p>
+          <p>Modern Black Blouse</p>
+          <div className="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p className="price">$35.00</p>
+         </div>
+        </div>
+        <div className="card">
+          <img src="https://via.placeholder.com/200" alt="" />
+         <div className="category">
+         <p>Category</p>
+          <p>Modern Black Blouse</p>
+          <div className="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p className="price">$35.00</p>
+         </div>
+        </div>
+        <div className="card">
+          <img src="https://via.placeholder.com/200" alt="" />
+         <div className="category">
+         <p>Category</p>
+          <p>Modern Black Blouse</p>
+          <div className="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p className="price">$35.00</p>
+         </div>
+        </div>
+      </div>
     </div>
 
 
