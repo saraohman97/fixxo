@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #ff7373; */
+  margin: 0 20rem;
+}
+div .promo {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #ff7373;
+}
+
+.home-list {
+  list-style: none;
+  display: flex;
+}
+
+.home-list li {
+  margin-right: 0.3rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.fa-house,
+.fa-greater-than {
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+}
+
+.details-container {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0 aut0; */
+
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.pdt-specs h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.brand {
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+}
+.brand span {
+  margin-right: 0.5rem;
+}
+.stars {
+  color: #ff7373;
+}
+.price {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1;
+  font-weight: 300;
+}
+
+.description p a {
+  text-decoration: none;
+}
+
+.size {
+  margin-right: 1.2rem;
+}
+.size-btn {
+  margin-right: 0.4rem;
+  background: #fff;
+}
+select {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+}
+.qty-btn {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem;
+  background: #fff;
+}
+.qty-btn.one {
+  padding: 0.5rem 1rem;
+}
+
+.add-to-cart {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  background: #ff7373;
+}
+.qty,
+.share {
+  margin-top: 1rem;
+}
+
+.fa-brands {
+  margin-right: 1rem;
+}
+
+.small-img {
+  /* margin-right: 33.4px; */
+  margin-right: 7px;
+}
