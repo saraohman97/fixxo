@@ -47,7 +47,7 @@ const Home = () => {
         <div className="second-showcase">
             <div className="container">
 
-                <div className="winter">
+                <div className="first-placeholder">
                     <div className="text">
                         <h2>Winter Clearance <br /> Up to 70% Off!</h2>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem apriam eaque ipsa quae ab illo inventore.</p>
@@ -55,7 +55,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="arrivals">
+                <div className="second-placeholder">
                     <h2>New <br />Arrivals</h2>
                     <button className='btn btn-black'>SHOP NOW</button>
                 </div>
@@ -81,12 +81,12 @@ const Home = () => {
         <div className="third-showcase">
             <div className="container">
 
-                <div className="pamela">
+                <div className="third-placeholder">
                     <h2 className='clr-white'>Pamela Reif's <br />Top Picks</h2>
                     <button className='btn btn-black'>SHOP NOW</button>
                 </div>
 
-                <div className="conscious">
+                <div className="fourth-placeholder">
                     <h2>Let's Be <br />Conscious</h2>
                     <button className='btn'>FLASE SALE</button>
                 </div>
