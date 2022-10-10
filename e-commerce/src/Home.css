@@ -22,20 +22,37 @@ body {
 }
 
 /* BUTTONS */
-.home .btn {
+.home .btn,
+.pop-up .btn {
     border: none;
     width: 170px;
     height: 50px;
     background-color: white;
     color: black;
 }
-.home .btn-pink {
+.home .btn-pink,
+.pop-up .btn-pink {
     color: white;
     background-color: var(--clr-pink);
 }
 .home .btn-black {
     background-color: black;
     color: white;
+}
+
+.btn:hover {
+    animation: mypink 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes mypink {
+    to {background-color: black; color: white;}
+}
+.btn-black:hover {
+    animation: myblack 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes myblack {
+    to {background-color: gray;}
 }
 
 
@@ -195,6 +212,7 @@ body {
 .home .product-item:hover .featured-icons i,
 .home .product-item:hover .layer {
     display: block;
+
 }
 .home .product-item .gray-box {
     width: 220px;
