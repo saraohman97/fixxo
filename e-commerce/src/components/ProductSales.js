@@ -6,8 +6,8 @@ const ProductSales = () => {
     <div className='container'>
       <div className='product-sales'>
         <div className='flash-sale'>
-          <h2>2 FOR US $29</h2>
-          <button>FLASH SALE</button>
+          <h2 className='flash-text'>2 FOR US $29</h2>
+          <button className='btn'>FLASH SALE</button>
         </div>
         <div className='sales-card-wrapper'>
           <SalesCard />
