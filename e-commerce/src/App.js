@@ -1,12 +1,14 @@
 import './App.css';
-import PopUp from './components/Modal/PopUp';
 // import { Routes, Route } from 'react-router-dom'
+import PopUp from './components/Modal/PopUp';
+import SecondNavbar from './components/navbar/SecondNavbar';
 import Home from './Home';
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <SecondNavbar />
+      {/* <Home /> */}
       {/* <PopUp /> */}
     </div>
   );
