@@ -426,7 +426,12 @@ body {
 }
 
 /* Footer */
-
+.bg-c-fixxo {
+  background-color: #F8F8F8;
+  border-top: 1px solid #b3b7bb;
+  padding: .3rem;
+  text-align: center;
+}
 .footer {
   background-color: #F8F8F8;
   display: flex;
@@ -480,6 +485,8 @@ body {
   padding: .1rem .4rem;
   gap: .5rem;
   cursor: pointer;
+  width: 120px;
+  height: 35px;
 }
 .footer .btn-app small {
   font-size: 7px;
@@ -490,7 +497,7 @@ body {
   color: #fff;
 }
 .footer .btn-app  i {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .footer .btn-app  img {
   width: 20px;
@@ -506,3 +513,9 @@ body {
 .social-icons i {
   cursor: pointer;
 }
+.c-fixxo{
+  text-align: center;
+  font-size: .6rem;
+  color: #616365;
+}
+
