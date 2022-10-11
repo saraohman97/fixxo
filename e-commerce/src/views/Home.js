@@ -1,6 +1,7 @@
 import React from 'react'
 import BestSellingSection from '../components/BestSellingSection'
 import FlashSaleShowcase from '../components/FlashSaleShowcase'
+import Footer from '../components/Footer'
 import InfoCircles from '../components/InfoCircles'
 import ProductSales from '../components/ProductSales'
 import '../styles/Home.css'
@@ -19,7 +20,9 @@ const Home = () => {
         <InfoCircles icon={'/img/delivery-truck.svg'} title={'30 Day Reuters'} text={'Village did removed enjoyed explain talking.'} />
       </div>
 
+      <Footer />
     </div>
+
   )
 }
 

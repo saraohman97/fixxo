@@ -424,3 +424,85 @@ body {
   font-weight: 500;
   font-size: .8rem;
 }
+
+/* Footer */
+
+.footer {
+  background-color: #F8F8F8;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 2rem;
+  padding-block: 2rem;
+  gap: 5rem;
+}
+.footer .customer-service {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+.footer .credit-card {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+.footer .our-stores {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+.footer h5{
+  margin-bottom: .5rem;
+}
+.footer p {
+  color: #616365;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.app-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .app-btns {
+  display: flex;
+  gap: 1rem;
+  
+}
+
+.footer .btn-app {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  padding: .1rem .4rem;
+  gap: .5rem;
+  cursor: pointer;
+}
+.footer .btn-app small {
+  font-size: 7px;
+  text-align: start;
+}
+.footer .btn-app  span {
+  font-size: 12px;
+  color: #fff;
+}
+.footer .btn-app  i {
+  font-size: 1.2rem;
+}
+.footer .btn-app  img {
+  width: 20px;
+}
+.footer .btn-app .btn-content {
+  display: flex;
+  flex-direction: column;
+}
+.social-icons {
+  display: flex;
+  gap: .8rem;
+}
+.social-icons i {
+  cursor: pointer;
+}
