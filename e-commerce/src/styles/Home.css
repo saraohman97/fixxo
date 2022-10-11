@@ -191,7 +191,9 @@ body {
 .product-sales {
   display: flex;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
+
 
 .flash-sale {
   background-color: var(--clr-grey);
@@ -206,6 +208,7 @@ body {
   color: #ffffff;
 }
 .btn {
+  cursor: pointer;
   font-weight: 600;
   position: relative;
   background-color: #fff;
@@ -234,32 +237,43 @@ body {
   border-bottom: 2px solid #000;
 }
 
-.sales-card-wrapper {
+.sales-card-wrapper-upper {
   display: grid;
   grid-template-columns: minmax(255px, 280px) auto;
   gap: 1.5rem;
-  padding-right: 50px;
+  padding-right: 4rem;
+}
+.sales-card-wrapper-lower {
+  display: grid;
+  grid-template-columns: minmax(255px, 280px) auto;
+  gap: 1.5rem;
+  padding-left: 4rem;
 }
 
-.sales-card-wrapper .card {
+.sales-card-wrapper-upper .card,
+.sale-card-wrapper-lower .card {
   display: flex;
   flex-direction: column;
   gap: .3rem;
 }
 
-.sales-card-wrapper .card .card-picture {
+.sales-card-wrapper-upper .card .card-picture,
+.sales-card-wrapper-lower .card .card-picture {
   background-color: var(--clr-showcase-bg);
   width: 255px;
   height: 210px;
 }
 
-.sales-card-wrapper .card h6 {
+.sales-card-wrapper-upper .card h6,
+.sales-card-wrapper-lower .card h6 {
   align-self: flex-start;
 }
-.sales-card-wrapper .card small {
+.sales-card-wrapper-upper .card small,
+.sales-card-wrapper-lower .card small {
   font-weight: 500;
 }
-.sales-card-wrapper .card p {
+.sales-card-wrapper-upper .card p,
+.sales-card-wrapper-lower .card p {
   font-weight: 600;
 }
 .fa-star {
