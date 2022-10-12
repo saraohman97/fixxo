@@ -20,7 +20,6 @@ const Home = () => {
         <InfoCircles icon={'/img/delivery-truck.svg'} title={'30 Day Reuters'} text={'Village did removed enjoyed explain talking.'} />
       </div>
 
-      <Footer />
     </div>
 
   )
