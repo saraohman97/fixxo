@@ -1,7 +1,6 @@
 import React from 'react'
 import BestSellingSection from '../components/BestSellingSection'
 import FlashSaleShowcase from '../components/FlashSaleShowcase'
-import Footer from '../components/Footer'
 import InfoCircles from '../components/InfoCircles'
 import ProductSales from '../components/ProductSales'
 import '../styles/Home.css'
