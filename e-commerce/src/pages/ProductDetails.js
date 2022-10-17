@@ -12,12 +12,15 @@ const ProductDetails = () => {
         </ul>
       </div>
       <div className="details-container">
-        <div className="pdt-img">
-          <img src="../../images/main.png" alt="main-img" />
-          {/* <img src="https://via.placeholder.com/350" alt="" /><br /><br /> */}
-          <img className='small-img' src="https://via.placeholder.com/110" alt="" />
-          <img className='small-img' src="https://via.placeholder.com/110" alt="" />
-          <img className='small-img' src="https://via.placeholder.com/110" alt="" />
+        <div className="pdt-images" >
+          {/* <img src="../images/main.png" alt="main-img" style={{backgroundColor:'red'}} /> */}
+          <img src="https://via.placeholder.com/540X444" alt="" />
+          <div className="small-images">
+          <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
+          <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
+          <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
+          </div>
+         
         </div>
         <div className="pdt-specs">
           <h1>Modern Black House</h1>
@@ -162,6 +165,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
+      <img src="../images/main.png" alt="main-img" style={{ backgroundColor: 'red' }} />
     </div>
 
 
