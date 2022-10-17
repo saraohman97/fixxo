@@ -13,7 +13,8 @@ const ProductDetails = () => {
       </div>
       <div className="details-container">
         <div className="pdt-img">
-          <img src="https://via.placeholder.com/350" alt="" /><br /><br />
+          <img src="../../images/main.png" alt="main-img" />
+          {/* <img src="https://via.placeholder.com/350" alt="" /><br /><br /> */}
           <img className='small-img' src="https://via.placeholder.com/110" alt="" />
           <img className='small-img' src="https://via.placeholder.com/110" alt="" />
           <img className='small-img' src="https://via.placeholder.com/110" alt="" />
