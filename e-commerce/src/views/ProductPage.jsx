@@ -6,8 +6,7 @@ import ProductPageListings from "../components/ProductPageListings";
 const ProductPage = () => {
 
     return(
-        <div>
-            <h1>hej</h1>
+        <div className="product-page">
             <ProductpageFilter />
             <ProductPageListings />
         </div>  

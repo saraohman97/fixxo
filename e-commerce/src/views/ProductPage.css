@@ -9,78 +9,85 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.Product-Page-Filter{
+.product-page{
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    margin-right: 190px
+
+}
+
+.product-page-filter{
+    display: flex;
     flex-direction: column;
     width: 275px;
     margin-left: 30px;
 }
-.Product-Page-Filter h1{
+.product-page-filter h1{
     font-size: 18px;
     font-weight: 600;
     color: #222529;
 }
-.Product-Page-Filter h2{
+.product-page-filter h2{
     font-size: 16px;
     font-weight: 500;
     color: var(--pp-clr-gray);
 }
 
 /* All Categories CSS */
-.AllCategories{
+.all-categories{
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 }
 .border{
-    border-bottom: 1px solid var(--pp-clr-gray);
+    border-bottom: 2px solid #61636541;
     padding-bottom: 5px;
 }
-.AllCategoriesExamples {
+.all-categories-examples {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding-left: 15px;
     
 }
-.AllCategoriesExamples h2{
+.all-categories-examples h2{
     margin: 0;
 }
 
 /* Price */
-.Price{
+.price{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.Price .slider {
+.price .slider {
     background-color: red;
 }
 
 /* Size CSS */
-.Size{
+.size{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     }
-.SizeChoices {
+.size-choices {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding-left: 15px;
         
 }
-.SizeChoices h2{
+.size-choices h2{
     margin: 0;
 }
 
-.Color{
+.color{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     }
-.Checkbox-Colors {
+.checkbox-colors {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -88,7 +95,7 @@ justify-content: flex-start;
 
         
 }
-.Checkbox-Colors label{
+.checkbox-colors label{
     font-weight: 500;
     color: var(--pp-clr-gray);
 
@@ -123,25 +130,128 @@ justify-content: flex-start;
 
 
 
-.Brands{
+.brands{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.BrandsChoices {
+.brands-choices {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding-left: 15px;
         
 }
-.BrandsChoices h2{
+.brands-choices h2{
     margin: 0;
 }
 
 
-.Checkbox-Colors{
+.checkbox-colors{
     display: flex;
     flex-direction: column;
 }
+
+
+
+
+/* Product Page Cards Wrap */
+.center-align{
+    display: flex;
+    justify-content: center;
+}
+.product-page-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    gap: 25px;
+}
+.product-page-listings-filters{
+    display: flex;
+    /* Tror width är ett väldigt dåligt sätt :( */
+    width: 825px;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+.product-page-listings{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/* Sorting Options */
+.sorting-options{
+    width: 240px;
+    height: 40px;
+    font-weight: 500;
+    color: #616365;
+    border-radius: 0;
+    font-family: 'Poppins', sans-serif;
+    border-width: 2px;
+}
+
+/* Show Options */
+.show-options-label
+{
+    color: #616365;
+    font-weight: 500;
+    
+}
+.show-options-select{
+    width: 54px;
+    height: 40px;
+    padding-left: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #616365;
+    font-weight: 500;
+    border-radius: 0;
+    border-width: 2px;
+}
+
+
+/* Pagination */
+.pagination {
+   display: inline-flex;
+   justify-content: center;
+   align-items: ce;
+   margin-bottom: 50px;
+}
+  
+.pagination a {
+    display: flex;
+    justify-content: center;
+    color: #616365;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: #FF7373 .3s;
+    background-color: #F4F4F4;
+    border-radius: 1000px;
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+}
+  
+.pagination a.active {
+    background-color: #FF7373;
+    color: #F4F4F4;
+    border: 1px solid #FF7373;
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: #F4F4F4;
+}
+
+
+
+/* Slider css */
+.price{
+    margin-bottom: 25px;
+}
+
+
 
