@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ProductDetails = () => {
 
@@ -16,14 +17,14 @@ const ProductDetails = () => {
           {/* <img src="../images/main.png" alt="main-img" style={{backgroundColor:'red'}} /> */}
           <img src="https://via.placeholder.com/540X444" alt="" />
           <div className="small-images">
-          <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
-          <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
-          <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
+            <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
+            <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
+            <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
           </div>
-         
+
         </div>
         <div className="pdt-specs">
-          <h1>Modern Black House</h1>
+          <h1>Modern Black Blouse</h1>
           <div className="brand">
             <span>SKU: 12345670</span>
             <span>BRAND:The Northland</span>
@@ -35,10 +36,11 @@ const ProductDetails = () => {
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
           </div>
-          <p className="price">$35.00</p>
+          <p className="price" stye={{fontSize:'1.1rem'}}>$35.00</p>
           <div className="description">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aut quod sequi optio deleniti perspiciatis ipsam doloribus iure alias nulla non magni, quaerat eum eaque dolores molestias obcaecati veritatis? Necessitatibus blanditiis libero quasi a, similique rerum   <a href='#'>(read more)</a></p>
           </div>
+
           <div className="sizes">
             <span className='size'>Size:</span>
             <span className='size-btn'><button>S</button></span>
@@ -47,7 +49,7 @@ const ProductDetails = () => {
             <span className='size-btn'><button>X</button></span>
           </div>
           <div className="color">
-            <span className='size'>Color:</span>
+            <span className=''>Color:</span>
             <span>
               <select>
                 <option value="0">Choose an option</option>
@@ -66,27 +68,32 @@ const ProductDetails = () => {
           </div>
 
           <div className="share">
-            <span className='size'>Share:</span>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-google"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <span>Share:</span>
+            <div className="brand-specs">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+
           </div>
         </div>
       </div>
       <div className="product-description">
         <ul className='steps-list'>
-          <li className='active'>Description</li>
-          <li>Additional</li>
-          <li>Shopping & Returns</li>
-          <li>Reviews</li>
+          <li className='active'><Link to="/">Description</Link></li>
+          <li> <Link to="/">Additional</Link></li>
+          <li><Link to="/">Shopping & Returns</Link></li>
+          <li> <Link to="/">Reviews</Link></li>
+          {/* <li>Shopping & Returns</li>
+          <li>Reviews</li> */}
         </ul>
         <div className='steps'>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis aspernatur, adipisci numquam pariatur odio magni, quidem facilis omnis porro nisi ducimus maiores natus hic sint ipsum ex non sequi officia exercitationem animi neque eum atque? Quas ipsam adipisci velit vel temporibus perferendis, porro dolorem quae cum saepe ipsa deleniti!
           </p>
-          <ul>
+          <ul >
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, animi.</li>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, eos.</li>
             <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, blanditiis.</li>
@@ -99,16 +106,18 @@ const ProductDetails = () => {
       <div className="related-pdts">
         <p>Related Products</p>
         <div>
+          {/* <img src="../images/arrow-ios-back-outline@2x.png" alt="back-btn" />
+          <img src="../images/arrow-ios-forward-fill.png" alt="forward-btn" style={{color:'red'}} /> */}
           <button><i class="fa-solid fa-less-than"></i></button>
           <button><i class="fa-solid fa-greater-than"></i></button>
         </div>
       </div>
       <div className="related-pdts-img">
         <div className="card">
-          <img src="https://via.placeholder.com/210" alt="" />
+          <img src="https://via.placeholder.com/255X210" alt="" />
           <div className="category">
-            <p>Category</p>
-            <p>Modern Black Blouse</p>
+            <p style={{ fontSize: '0.8rem' }}>Category</p>
+            <p className='blouse'>Modern Black Blouse</p>
             <div className="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -120,10 +129,10 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="card">
-          <img src="https://via.placeholder.com/210" alt="" />
+          <img src="https://via.placeholder.com/255X210" alt="" />
           <div className="category">
-            <p>Category</p>
-            <p>Modern Black Blouse</p>
+            <p  style={{ fontSize: '0.8rem' }}>Category</p>
+            <p className='blouse'>Modern Black Blouse</p>
             <div className="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -135,10 +144,10 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="card">
-          <img src="https://via.placeholder.com/210" alt="" />
+          <img src="https://via.placeholder.com/255X210" alt="" />
           <div className="category">
-            <p>Category</p>
-            <p>Modern Black Blouse</p>
+            <p  style={{ fontSize: '0.8rem' }}>Category</p>
+            <p className='blouse'>Modern Black Blouse</p>
             <div className="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -150,10 +159,10 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="card">
-          <img src="https://via.placeholder.com/210" alt="" />
+          <img src="https://via.placeholder.com/255X210" alt="" />
           <div className="category">
-            <p>Category</p>
-            <p>Modern Black Blouse</p>
+            <p  style={{ fontSize: '0.8rem' }}>Category</p>
+            <p className='blouse'>Modern Black Blouse</p>
             <div className="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -165,7 +174,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-      <img src="../images/main.png" alt="main-img" style={{ backgroundColor: 'red' }} />
+
     </div>
 
 

@@ -40,14 +40,12 @@ div .promo {
 }
 
 .details-container {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: start;
-  margin: 0 aut0; */
-
   display: grid;
   grid-template-columns: auto auto;
   gap: 20px;
+}
+.pdt-specs {
+  line-height: 1.9rem;
 }
 
 .pdt-specs h1 {
@@ -59,12 +57,12 @@ div .promo {
 
 .brand {
   font-size: 0.8rem;
-  font-family: "Poppins", sans-serif;
   display: flex;
 }
 .brand span {
   margin-right: 0.5rem;
 }
+
 .stars {
   color: #ff7373;
 }
@@ -73,22 +71,31 @@ div .promo {
   font-size: 1.1;
   font-weight: 300;
 }
+.description p {
+  color: #616365;
+}
 
 .description p a {
   text-decoration: none;
 }
 
 .size {
-  margin-right: 1.2rem;
+  margin-right: 3rem;
 }
-.size-btn {
+.size-btn button {
   margin-right: 0.4rem;
+  height: 40px;
+  width: 40px;
+  margin-top: 2em;
   background: #fff;
 }
+
 select {
   margin-top: 2rem;
-  padding: 0.5rem 1rem;
+  margin-left: 2rem;
+  padding: 0.5rem 2rem;
 }
+
 .qty-btn {
   font-size: 1rem;
   font-weight: 300;
@@ -111,15 +118,22 @@ select {
 .share {
   margin-top: 1rem;
 }
+.share {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.brand-specs {
+  margin-left: 1.5rem;
+}
 
 .fa-brands {
   margin-right: 1rem;
 }
-.small-images{
+.small-images {
   width: 540px;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .product-description ul.steps-list {
@@ -131,37 +145,44 @@ select {
 }
 
 .product-description ul.steps-list li {
-  margin-right: 0.8rem;
+  margin-right: 2rem;
   font-size: 1rem;
-  font-family: "Poppins", sans-serif;
 }
 
-li.active {
-  color: #ff7373;
+li.active a {
+  color: #ff7373 !important;
   border-bottom: 1px solid #ff7373;
+}
+
+ul.steps-list li a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #616365;
 }
 
 .steps {
   margin-top: 1rem;
   font-size: 1rem;
+  color: #616365;
 }
 .steps p {
   margin-bottom: 1rem;
 }
 
 .steps ul {
-  margin: 0;
+  margin-left: 1rem;
 }
 
 .related-pdts {
   display: flex;
   justify-content: space-between;
+  margin-top: 3rem;
 }
 
 .related-pdts p {
   font-weight: 700;
 }
-.related-pdts div{
+.related-pdts div {
   margin-right: 1.2rem;
 }
 .related-pdts div button {
@@ -172,20 +193,26 @@ li.active {
 }
 
 .related-pdts-img {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin-top: 1rem; */
   display: grid;
-  grid-template-columns:auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
   text-align: center;
   margin-top: 1rem;
-  
+}
+.related-pdts-img .card {
+  max-height: 323px;
+  max-width: 255px;
+}
+.category p.blouse,
+.category p.price {
+  color: #23262a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.category p.price {
+  font-size: 1.1rem;
 }
 
-.pdt-images{
+.pdt-images {
   height: 620px;
   width: 540px;
-
 }
