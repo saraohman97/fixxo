@@ -6,14 +6,13 @@ import React from 'react'
 **/
 
 export const BlogComment = (props) => {
-  return(
+  return (
     <>
       <strong>BlogComment</strong>
     </>
-    
-   )
+  )
 
- }
+}
 
 
- export default BlogComment 
+export default BlogComment 

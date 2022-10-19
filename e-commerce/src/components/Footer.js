@@ -1,4 +1,5 @@
 import React from 'react'
+import '../components/Footer.css'
 
 const Footer = () => {
   return (
@@ -29,16 +30,15 @@ const Footer = () => {
         <div className='app-list'>
           <h5>Macy's App</h5>
           <div className='app-btns'>
-            <button className='btn-app'><i class="fa-brands fa-apple"></i><div className='btn-content'><small>Download on the</small><span>App Store</span></div></button>
+            <button className='btn-app'><i className="fa-brands fa-apple"></i><div className='btn-content'><small>Download on the</small><span>App Store</span></div></button>
             <button className='btn-app'><img src="/img/google-play.png" alt="" /><div className='btn-content'><small>GET IT ON</small><span>Google Play</span></div></button>
-
           </div>
           <div className='social-icons'>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-google"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <i className="fa-brands fa-facebook-f"></i>
+            <i className="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-google"></i>
+            <i className="fa-brands fa-linkedin"></i>
           </div>
 
         </div>

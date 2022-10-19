@@ -1,14 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import SecondNavbar from '../components/navbar/SecondNavbar'
+import './styles/ProductDetails.css'
 
 const ProductDetails = () => {
 
   return (
+    <>
+    <SecondNavbar />
     <div className="intro-container">
       <div><h1 className='promo'>Get 25% OFF at the Fixxo selection-shop Now!</h1></div>
       <div className="home">
         <ul className='home-list'>
-          <li> <i class="fa-solid fa-house"></i>Home <i class="fa-solid fa-greater-than"></i></li>
+          <li> <i className="fa-solid fa-house"></i>Home <i className="fa-solid fa-greater-than"></i></li>
           <li>product signal</li>
         </ul>
       </div>
@@ -30,15 +34,15 @@ const ProductDetails = () => {
             <span>BRAND:The Northland</span>
           </div>
           <div className="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
           </div>
           <p className="price" stye={{fontSize:'1.1rem'}}>$35.00</p>
           <div className="description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aut quod sequi optio deleniti perspiciatis ipsam doloribus iure alias nulla non magni, quaerat eum eaque dolores molestias obcaecati veritatis? Necessitatibus blanditiis libero quasi a, similique rerum   <a href='#'>(read more)</a></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aut quod sequi optio deleniti perspiciatis ipsam doloribus iure alias nulla non magni, quaerat eum eaque dolores molestias obcaecati veritatis? Necessitatibus blanditiis libero quasi a, similique rerum   <Link t0='/details'>(read more)</Link></p>
           </div>
 
           <div className="sizes">
@@ -70,11 +74,11 @@ const ProductDetails = () => {
           <div className="share">
             <span>Share:</span>
             <div className="brand-specs">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-google"></i>
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-twitter"></i>
+              <i className="fa-brands fa-google"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </div>
 
           </div>
@@ -108,8 +112,8 @@ const ProductDetails = () => {
         <div>
           {/* <img src="../images/arrow-ios-back-outline@2x.png" alt="back-btn" />
           <img src="../images/arrow-ios-forward-fill.png" alt="forward-btn" style={{color:'red'}} /> */}
-          <button><i class="fa-solid fa-less-than"></i></button>
-          <button><i class="fa-solid fa-greater-than"></i></button>
+          <button><i className="fa-solid fa-less-than"></i></button>
+          <button><i className="fa-solid fa-greater-than"></i></button>
         </div>
       </div>
       <div className="related-pdts-img">
@@ -119,11 +123,11 @@ const ProductDetails = () => {
             <p style={{ fontSize: '0.8rem' }}>Category</p>
             <p className='blouse'>Modern Black Blouse</p>
             <div className="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
             </div>
             <p className="price">$35.00</p>
           </div>
@@ -134,11 +138,11 @@ const ProductDetails = () => {
             <p  style={{ fontSize: '0.8rem' }}>Category</p>
             <p className='blouse'>Modern Black Blouse</p>
             <div className="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
             </div>
             <p className="price">$35.00</p>
           </div>
@@ -149,11 +153,11 @@ const ProductDetails = () => {
             <p  style={{ fontSize: '0.8rem' }}>Category</p>
             <p className='blouse'>Modern Black Blouse</p>
             <div className="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
             </div>
             <p className="price">$35.00</p>
           </div>
@@ -164,11 +168,11 @@ const ProductDetails = () => {
             <p  style={{ fontSize: '0.8rem' }}>Category</p>
             <p className='blouse'>Modern Black Blouse</p>
             <div className="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
             </div>
             <p className="price">$35.00</p>
           </div>
@@ -176,11 +180,7 @@ const ProductDetails = () => {
       </div>
 
     </div>
-
-
-
-
-
+    </>
   )
 }
 

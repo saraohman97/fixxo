@@ -1,5 +1,6 @@
 import React from 'react'
-import '../navbar/secondNavbar.css'
+import { Link } from 'react-router-dom'
+import '../navbar/SecondNavbar.css'
 
 const SecondNavbar = () => {
   return (
@@ -7,21 +8,21 @@ const SecondNavbar = () => {
       <div className="container">
 
         <div className="navbar-left">
-          <h3 className='brand'>Fixxo.</h3>
+          <Link to='/'><h3 className='brand'>Fixxo.</h3></Link>
 
           <div className="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Categories</a>
-            <a href="#">Products</a>
-            <a href="#">Pages</a>
-            <a href="#">Blog</a>
+            <Link to='/'>Home</Link>
+            <Link to='/'>Categories</Link>
+            <Link to='/products'>Products</Link>
+            <Link to='/'>Pages</Link>
+            <Link to='/blog'>Blog</Link>
           </div>
         </div>
 
         <div className="navbar-right">
-          <a href="#">Login</a>
+          <div>Login</div>
 
-          <a href="#">My Cart / $23.00</a>
+          <div>My Cart / $23.00</div>
 
           <div className="icons">
             <i className="fa-solid fa-magnifying-glass"></i>
@@ -30,9 +31,7 @@ const SecondNavbar = () => {
             <i className="fa-solid fa-bag-shopping"><small className='number'>3</small></i>
           </div>
         </div>
-
-
-
+        
       </div>
     </div>
   )

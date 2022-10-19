@@ -1,6 +1,5 @@
 import React from 'react'
-
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 /**
 * @Biruk
 * @Blog function
@@ -9,19 +8,17 @@ import {Link} from 'react-router-dom'
 const BlogCard = () => {
   return(
     <div className='blog-card'>
-       <Link to ='/blogdetails'>
-       <strong>
+      <Link to ='/blog'>
+        <strong>
           Blog-content
         </strong>
-        </Link>
+      </Link>
         <p>
           Blog-content
         </p>
-       
-       
     </div>
-   )
+  )
 
- }
+}
 
- export default BlogCard
+export default BlogCard

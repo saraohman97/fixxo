@@ -4,7 +4,7 @@
     height: 55vh;
     margin: auto;
 
-    position: absolute;
+    position: fixed;
     inset: 0;
     box-shadow: 0 0 5px gray;
 }

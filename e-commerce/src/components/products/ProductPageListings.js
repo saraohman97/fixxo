@@ -9,7 +9,7 @@ for (let i = 0; i < option; i++) {
   
 const ProductPageListings = () => {
 
-  const [salesCards, setSalesCards] = React.useState(tempsalesCards);
+  const [salesCards, setSalesCards] =  useState(tempsalesCards);
   const calcNrDisplay = () => {
 
     tempsalesCards = [];
@@ -59,11 +59,11 @@ const ProductPageListings = () => {
       
           </div>
           <div class="pagination">
-            <a href="#">&laquo;</a>
-            <a href="#" class="active">01</a>
-            <a href="#">02</a>
-            <a href="#">03</a>
-            <a href="#">&raquo;</a>
+            <a href="/#">&laquo;</a>
+            <a href="/#" class="active">01</a>
+            <a href="/#">02</a>
+            <a href="/#">03</a>
+            <a href="/#">&raquo;</a>
           </div>
         </div>
         

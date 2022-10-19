@@ -1,6 +1,6 @@
 import React from 'react'
-import grayBox from '../img/gray-box.svg'
-import star from '../img/star.svg'
+import grayBox from '../../img/gray-box.svg'
+import star from '../../img/star.svg'
 
 const ProductItem = () => {
   return (

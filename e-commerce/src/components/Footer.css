@@ -1,0 +1,42 @@
+.footer .btn-app {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    padding: .1rem .4rem;
+    gap: .5rem;
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+}
+.footer .btn-app small {
+    font-size: 7px;
+    text-align: start;
+}
+.footer .btn-app  span {
+    font-size: 12px;
+    color: #fff;
+}
+.footer .btn-app  i {
+    font-size: 1.5rem;
+}
+.footer .btn-app  img {
+    width: 20px;
+}
+.footer .btn-app .btn-content {
+    display: flex;
+    flex-direction: column;
+}
+.social-icons {
+    display: flex;
+    gap: .8rem;
+}
+.social-icons i {
+    cursor: pointer;
+}
+.c-fixxo{
+    text-align: center;
+    font-size: .6rem;
+    color: #616365;
+}

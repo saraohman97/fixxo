@@ -1,5 +1,5 @@
 import React from 'react'
-import SmallSalesCard from './SmallSalesCard'
+import SmallSalesCard from './SmallSalesCard.js'
 
 const BestSellingSection = () => {
   return (

@@ -1,4 +1,4 @@
-.container {
+.multi-container {
 
   display: flex;
   align-items: center;
@@ -6,8 +6,8 @@
 }
   
 .slider {
-    position: relative;
-    width: 200px;
+  position: relative;
+  width: 200px;
 }
   
 .slider__track,

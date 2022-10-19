@@ -1,13 +1,10 @@
 .blogCategories-conatiner{
     align-items: center;
     width : 100%;
-   
 }
 
 
 .catagories-title{
-        
-       font-weight:700;
-       justify-items:center;
-      
+    font-weight:700;
+    justify-items:center;
 }
