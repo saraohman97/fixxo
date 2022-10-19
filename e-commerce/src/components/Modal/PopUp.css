@@ -1,0 +1,53 @@
+.pop-up {
+    background-color: #BBBBBB;
+    width: 60%;
+    height: 55vh;
+    margin: auto;
+
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 5px gray;
+}
+.pop-up .text {
+    background-color: white;
+    height: 100%;
+    width: 35%;
+    margin: auto;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pop-up .talkbubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pop-up .text-in-talkbubble {
+    background-color: var(--clr-pink);
+    padding: .2rem 2rem;
+    color: white;
+}
+.pop-up .text-center {
+    text-align: center;
+}
+.pop-up .text small,
+.pop-up .form-control {
+    color: #222529;
+    font-weight: 200;
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+}
+.pop-up .form-control {
+    border: 1px solid #222529;
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+    outline: none;
+}
+.pop-up .form-control:focus {
+    border: 1px solid lightgray;
+    transition: border .35s ease-in-out;
+}
