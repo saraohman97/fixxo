@@ -51,10 +51,20 @@ const BlogDetails = () => {
                               remaining essentially unchanged.</p> 
                             
                             </div>
-                            <div className='box-tags'>
-        <strong>Tags:</strong>
-        <span className='tags-list'> Books , Elment , Mars</span>
-       </div>
+                          <div className='box-tags-share'>
+                            <div className='tags'>
+                            <strong>Tags:</strong>
+                            <span className='tags-list'> Books , Elment , Mars</span>
+                             </div>
+                             <div className='shares'>
+                              <strong>Shares:</strong>
+                              <i class="fa-brands fa-facebook "></i>
+                              <i class="fa-brands fa-linkedin"></i>
+                              <i class="fa-brands fa-google"></i>
+                              <i class="fa-brands fa-twitter"></i>
+                          </div>
+                        </div>
+                            
                   <BlogComment/>                                  
 
                         
