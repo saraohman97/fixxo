@@ -52,9 +52,9 @@ const BlogDetails = () => {
                             
                             </div>
                             <div className='box-tags'>
-        <strong>Tags:</strong>
-        <span className='tags-list'> Books , Elment , Mars</span>
-       </div>
+                                <strong>Tags:</strong>
+                                <span className='tags-list'> Books , Elment , Mars</span>
+                          </div>
                   <BlogComment/>                                  
 
                         
