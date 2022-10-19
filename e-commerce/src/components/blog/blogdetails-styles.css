@@ -41,7 +41,7 @@
       font-size: 2rem;
       align-items: center;
       font-weight: 600;
-      margin: 0.6rem 2rem;
+     
     }
 
     .blog-details-subcontent
@@ -66,6 +66,4 @@
         margin: 0.2rem 0.2rem;
     }
 
-     .tags-box span{
-       
-     }
+   
