@@ -1,6 +1,8 @@
 import './ProductDetails.css'
 import ProductDetails from './pages/ProductDetails';
 import './App.css';
+import BlogPage from './components/blog/Blog-Page';
+import BlogDetails from './components/blog/BlogDetails';
 
 import Home from './views/Home'
 import Footer from './components/Footer';
@@ -18,10 +20,16 @@ function App() {
 
 
     <div className="App">
+    
+     <Routes>
+    </Routes>
     <SecondNavbar />
       <Home />
       <Routes>
         <Route path='/' element = {<ProductDetails/>}/>
+      <Route path="/blogdetails" element={<BlogDetails />} />
+      <Route path='/' element={<BlogPage/>}>Route</Route>
+        
       </Routes>
       <ProductPage />
       
