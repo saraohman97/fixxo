@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.intro-container {
+  width: 70%;
+  margin: 0 auto;
+}
+div .promo {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #ff7373;
+}
+
+.home-list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.home-list li {
+  margin-right: 0.3rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.fa-house,
+.fa-greater-than {
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+.pdt-specs {
+  line-height: 1.9rem;
+}
+
+.pdt-specs h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.brand {
+  font-size: 0.8rem;
+  display: flex;
+}
+.brand span {
+  margin-right: 0.5rem;
+}
+
+.stars {
+  color: #ff7373;
+}
+.price {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1;
+  font-weight: 300;
+}
+.description p {
+  color: #616365;
+}
+
+.description p a {
+  text-decoration: none;
+}
+
+.size {
+  margin-right: 3rem;
+}
+.size-btn button {
+  margin-right: 0.4rem;
+  height: 40px;
+  width: 40px;
+  margin-top: 2em;
+  background: #fff;
+}
+
+select {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  padding: 0.5rem 2rem;
+}
+
+.qty-btn {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem;
+  background: #fff;
+}
+.qty-btn.one {
+  padding: 0.5rem 1rem;
+}
+
+.add-to-cart {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  background: #ff7373;
+}
+.qty,
+.share {
+  margin-top: 1rem;
+}
+.share {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.brand-specs {
+  margin-left: 1.5rem;
+}
+
+.fa-brands {
+  margin-right: 1rem;
+}
+.small-images {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-description ul.steps-list {
+  list-style-type: none;
+  display: flex;
+  width: 50%;
+  margin-top: 2rem;
+  border-bottom: 1px solid grey;
+}
+
+.product-description ul.steps-list li {
+  margin-right: 2rem;
+  font-size: 1rem;
+}
+
+li.active a {
+  color: #ff7373 !important;
+  border-bottom: 1px solid #ff7373;
+}
+
+ul.steps-list li a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #616365;
+}
+
+.steps {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #616365;
+}
+.steps p {
+  margin-bottom: 1rem;
+}
+
+.steps ul {
+  margin-left: 1rem;
+}
+
+.related-pdts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.related-pdts p {
+  font-weight: 700;
+}
+.related-pdts div {
+  margin-right: 1.2rem;
+}
+.related-pdts div button {
+  margin-right: 0.5rem;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.related-pdts-img {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  margin-top: 1rem;
+}
+.related-pdts-img .card {
+  max-height: 323px;
+  max-width: 255px;
+}
+.category p.blouse,
+.category p.price {
+  color: #23262a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.category p.price {
+  font-size: 1.1rem;
+}
+
+.pdt-images {
+  height: 620px;
+  width: 540px;
+}
