@@ -1,30 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SalesCard from './SalesCard'
+import axios from 'axios'
 
-let option = 12;
-let tempsalesCards = [];
-for (let i = 0; i < option; i++) {
-  tempsalesCards.push(<SalesCard/>);
-}
-  
+// let option = 12;
+// let tempsalesCards = [];
+// for (let i = 0; i < option; i++) {
+//   tempsalesCards.push(<SalesCard/>);
+// }
+
+
+
+
 const ProductPageListings = () => {
+  const [salesCards, setSalesCards] =  useState();
 
-  const [salesCards, setSalesCards] =  useState(tempsalesCards);
-  const calcNrDisplay = () => {
+  useEffect(() => {
+    getAllProducts()
+    
+  }, [])
+  
 
-    tempsalesCards = [];
-    for (let i = 0; i < option; i++) {
-      tempsalesCards.push(<SalesCard/>);
-    }
-    setSalesCards(tempsalesCards);
-
+  const getAllProducts = async () => {
+    const products = await axios.get("http://localhost:9999/products")
+    setSalesCards(products.data)
+    console.log(products.data)
   }
+  // const calcNrDisplay = () => {
+
+  //   tempsalesCards = [];
+  //   for (let i = 0; i < option; i++) {
+  //     tempsalesCards.push(<SalesCard/>);
+  //   }
+  //   setSalesCards(tempsalesCards);
+
+  // }
   
 
   
   const handleChange = (e) => {
-    option = e.target.value;
-    calcNrDisplay();
+    // option = e.target.value;
+    // calcNrDisplay();
     console.log(salesCards);
   };
 
@@ -53,9 +68,9 @@ const ProductPageListings = () => {
           </div>
           
           <div className='product-page-listings'>
-            {salesCards.map((card) => {
-              return <SalesCard/>;
-            })}
+            {salesCards ? salesCards.map((product) => (
+              <SalesCard key={product.id} product={product} />
+            )) : <div></div>}
       
           </div>
           <div class="pagination">
