@@ -1,6 +1,7 @@
 import React from 'react'
 import BlogCard  from './BlogCard'
 import './blog.css'
+import './blogcard-styles.css'
 import BlogCategories  from './BlogCategoires'
 /**
 * @Biruk
@@ -9,9 +10,13 @@ import BlogCategories  from './BlogCategoires'
 
 const BlogPage = () => {
   return(
-    <div className='blog-page-conatiner'>
+    <div className='blog-details-layout'>
       
-      <div className='blog-card-list'>
+      <div className='blogcard-container'>
+      <BlogCard/>
+      <BlogCard/>
+      <BlogCard/>
+      <BlogCard/>
       <BlogCard/>
       <BlogCard/>
       <BlogCard/>

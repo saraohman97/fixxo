@@ -1,0 +1,38 @@
+
+.root{
+
+}
+.product-page-card{
+    display: flex;
+    justify-content: center;
+}
+.product-page-card p{
+    margin: 0;
+    color: #23262A;
+    font-weight: 600;
+}
+.product-page-inner-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.product-page-card h3{
+    margin: 0px;
+    font-weight: 600;
+    color: #23262A;
+}
+.product-page-card small{
+    margin: 0px;
+    font-weight: 500;
+    color: #616365;
+}
+.product-page-card-picture{
+    width: 255px;
+    height: 210px;
+    background-color: #F7F8FA;
+}
+
+.fa-star {
+    color: #FF7373;
+}

@@ -8,12 +8,12 @@ const CommentFrom =()=>{
     return (
     <form className='form-container-comment'>
       <strong>Leave replay</strong>
-      <div>
+      <div className='input-name'>
       <input type="text" id="comment-box" placeholder="First name" />
       <input type="text" id="comment-box" placeholder="Second name" />
       </div>
      
-      <textarea type="text" row='5' id="comment-box" placeholder="First name" />
+      <textarea type="text" rows='5' id="comment-box" placeholder="First name" />
       <button id="post">Post</button>
    </form> )
 }

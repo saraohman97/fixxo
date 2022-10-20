@@ -64,6 +64,12 @@ const BlogDetails = () => {
                               <i class="fa-brands fa-twitter"></i>
                           </div>
                         </div>
+                        <div className='blogs-comment'>
+                          <div className='blog-comment'><i class="fa-solid fa-user fa-lg blog-comment-i"></i> <p> Lorem Ipsum is simply dummy text of the printing industry. </p></div>
+                          <div className='blog-comment'><i class="fa-solid fa-user fa-lg blog-comment-i"></i> <p> Lorem Ipsum is simply dummy text of the printing industry. </p></div>
+                          <div className='blog-comment'><i class="fa-solid fa-user fa-lg blog-comment-i"></i> <p> Lorem Ipsum is simply dummy text of the printing industry. </p></div>
+                          
+                        </div>
                             
                   <BlogComment/>                                  
 

@@ -8,14 +8,12 @@ import {Link} from 'react-router-dom'
 
 const BlogCard = () => {
   return(
-    <div className='blog-card'>
+    <div className='blogcard'>
        <Link to ='/blogdetails'>
-       <strong>
-          Blog-content
-        </strong>
-        </Link>
+          <img src={'https://images.unsplash.com/photo-1665596553794-61961a0b40ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxODN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60'} className='blogcard-img' alt='img-blog'/>
+                </Link>
         <p>
-          Blog-content
+          Blog-content-Title
         </p>
        
        
