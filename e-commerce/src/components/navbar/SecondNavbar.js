@@ -15,7 +15,7 @@ const SecondNavbar = () => {
             <Link to='/'>Categories</Link>
             <Link to='/products'>Products</Link>
             <Link to='/'>Pages</Link>
-            <Link to='/blog'>Blog</Link>
+            <Link to='/blogpage'>Blog</Link>
           </div>
         </div>
 

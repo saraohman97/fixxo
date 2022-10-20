@@ -25,7 +25,7 @@ const Home = () => {
                         <NavLink to='/products'>Categories</NavLink>
                         <NavLink to='/products'>Products</NavLink>
                         <NavLink to='/'>Pages</NavLink>
-                        <NavLink to='/blog'>Blog</NavLink>
+                        <NavLink to='/blogpage'>Blog</NavLink>
                     </div>
 
                     <div className="menu-icons">

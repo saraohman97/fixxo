@@ -1,10 +1,19 @@
 .blogCategories-conatiner{
     align-items: center;
     width : 100%;
+    list-style: none;
+    padding: 1.2rem 0.6rem;
+    margin-left: 2rem;
 }
 
 
 .catagories-title{
-    font-weight:700;
-    justify-items:center;
+        
+       font-weight:700;
+       justify-items:center;
+      
+}
+
+div button{
+    margin: 0.33rem 0.3rem;
 }

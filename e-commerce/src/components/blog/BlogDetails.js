@@ -1,6 +1,6 @@
 import React from 'react'
 import  BlogCategories from './BlogCategoires'
-import BlogComment from './BlogComment'
+import BlogComment from '../blog/BlogComment'
 import './blogdetails-styles.css'
 /**
 * @Biruk
@@ -66,7 +66,7 @@ const BlogDetails = () => {
                         </div>
                         <div className='blogs-comment'>
                           <div className='blog-comment'><i class="fa-solid fa-user fa-lg blog-comment-i"></i> <p> Lorem Ipsum is simply dummy text of the printing industry. </p></div>
-                           <div className='blog-comment'><i class="fa-solid fa-user fa-lg blog-comment-i"></i> <p> Lorem Ipsum is simply dummy text of the printing industry. </p></div>
+                          <div className='blog-comment'><i class="fa-solid fa-user fa-lg blog-comment-i"></i> <p> Lorem Ipsum is simply dummy text of the printing industry. </p></div>
                           <div className='blog-comment'><i class="fa-solid fa-user fa-lg blog-comment-i"></i> <p> Lorem Ipsum is simply dummy text of the printing industry. </p></div>
                           
                         </div>
