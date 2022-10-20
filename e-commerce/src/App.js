@@ -8,13 +8,14 @@ import BlogDetails from './views/blog/BlogDetails';
 
 import Footer from './components/Footer.js';
 import BlogPage from './views/blog/BlogPage.js';
+import SecondNavbar from './components/navbar/SecondNavbar.js';
 // import PopUp from './components/Modal/PopUp';
 
 
 function App() {
   return (
     <div className="App">
-        
+       <SecondNavbar />
       <Routes>
         <Route path='/' element={ <Home /> } />
         <Route path='/products' element={ <ProductPage /> } />
