@@ -1,7 +1,8 @@
 import React from 'react'
 import './SalesCard.css'
 
-const SalesCard = (product) => {
+const SalesCard = ({product}) => {
+  
   return (
     <div className='product-page-card'>
       <div className='product-page-inner-card'>
@@ -9,7 +10,7 @@ const SalesCard = (product) => {
           {/* <img src="#" alt="" /> */}
         </div>
         <small>Category</small>
-        <p>Modern Black Blouse{product.data}</p>
+        <p>{product.name}</p>
         <div>
           <i className="fa-solid fa-star"></i>
           <i className="fa-solid fa-star"></i>
@@ -17,7 +18,7 @@ const SalesCard = (product) => {
           <i className="fa-solid fa-star"></i>
           <i className="fa-solid fa-star"></i>
         </div>
-        <h3>$35.00</h3>
+        <h3>${product.price}</h3>
       </div>
       
     </div>
