@@ -16,7 +16,7 @@ const ProductDetails = () => {
           <li>product signal</li>
         </ul>
       </div>
-      <div className="details-container">
+      <div className="pdtdetails-container">
         <div className="pdt-images" >
           {/* <img src="../images/main.png" alt="main-img" style={{backgroundColor:'red'}} /> */}
           <img src="https://via.placeholder.com/540X444" alt="" />
@@ -71,7 +71,7 @@ const ProductDetails = () => {
             <span><button className=' add-to-cart'>ADD TO CART</button></span>
           </div>
 
-          <div className="share">
+          <div className="share" >
             <span>Share:</span>
             <div className="brand-specs">
               <i className="fa-brands fa-facebook"></i>
