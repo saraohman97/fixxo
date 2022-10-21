@@ -7,7 +7,7 @@ const ProductDetails = () => {
 
   return (
     <>
-    <SecondNavbar />
+   
     <div className="intro-container">
       <div><h1 className='promo'>Get 25% OFF at the Fixxo selection-shop Now!</h1></div>
       <div className="home">
@@ -19,7 +19,7 @@ const ProductDetails = () => {
       <div className="pdtdetails-container">
         <div className="pdt-images" >
           {/* <img src="../images/main.png" alt="main-img" style={{backgroundColor:'red'}} /> */}
-          <img src="https://via.placeholder.com/540X444" alt="" />
+          <img src="https://via.placeholder.com/540X444" alt="" className='main-img' />
           <div className="small-images">
             <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
             <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
