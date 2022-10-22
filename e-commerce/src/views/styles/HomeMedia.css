@@ -1,0 +1,36 @@
+
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+    .home .featured .products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .home .showcase .d-none {
+        display: none;
+    }
+    .home .showcase img {
+        height: 53vh;
+    }
+    .home .showcase .text h1 {
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .home .second-showcase .container {
+        flex-direction: column;
+    }
+
+    .home .featured .products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home .third-showcase .container {
+        flex-direction: column;
+    }
+}

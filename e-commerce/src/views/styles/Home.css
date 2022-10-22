@@ -104,7 +104,7 @@ body {
 /* HOME - HEADER */
 .home .header {
   background-color: var(--clr-showcase-bg);
-  height: 85vh;
+  /* height: 85vh; */
 }
 .home .header .container .menu {
   display: flex;
@@ -176,6 +176,12 @@ body {
 .home .showcase img {
   height: 73vh;
 }
+.home .showcase .text {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translate(-50%)
+}
 .home .showcase .text h1 {
   font-weight: 800;
   font-size: 65px;
@@ -206,10 +212,9 @@ body {
   padding-top: 4rem;
   height: 47vh;
 }
-.home .second-showcase .container .first-placeholder p,
-.home .second-showcase .container .second-placeholder p {
+.home .second-showcase .container .first-placeholder p {
   margin-block: 1rem;
-  max-width: 55%;
+  max-width: 500px;
 }
 
 .home .second-showcase .container .second-placeholder {

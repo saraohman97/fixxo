@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './styles/Home.css'
+import './styles/HomeMedia.css'
 
 import headerImg1 from '../img/header-img-1.svg'
 import headerImg2 from '../img/header-img-2.svg'
@@ -47,7 +48,7 @@ const Home = () => {
                     <button className='btn btn-pink'>SHOP NOW</button>
                 </div>
 
-                <img src={headerImg2} alt="showcase background person" />
+                <img src={headerImg2} className='d-none' alt="showcase background person" />
             </div>
         </div>
 
