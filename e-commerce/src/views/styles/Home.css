@@ -29,7 +29,7 @@ body {
 }
 
 /* BTN WHITE */
-.btn {
+.home .btn {
   cursor: pointer;
   font-weight: 600;
   position: relative;
@@ -40,7 +40,7 @@ body {
   border: none;
 }
 
-.btn::before {
+.home .btn::before {
   content: "";
   position: absolute;
   left: 10px;
@@ -52,7 +52,7 @@ body {
   border-top: 2px solid #000;
 }
 
-.btn::after {
+.home .btn::after {
   content: "";
   position: absolute;
   right: 10px;
@@ -65,12 +65,12 @@ body {
 }
 
 /* BTN PINK */
-.btn-pink {
+.home .btn-pink {
   background-color: var(--clr-pink);
   color: white;
 }
-.btn-pink::before,
-.btn-black::before {
+.home.btn-pink::before,
+.home .btn-black::before {
   content: "";
   position: absolute;
   left: 10px;
@@ -81,8 +81,8 @@ body {
   border-left: 2px solid white;
   border-top: 2px solid white;
 }
-.btn-pink::after,
-.btn-black::after {
+.home .btn-pink::after,
+.home .btn-black::after {
   content: "";
   position: absolute;
   right: 10px;
@@ -95,7 +95,7 @@ body {
 }
 
 /* BTN BLACK */
-.btn-black {
+.home .btn-black {
   background-color: black;
   color: white;
 }
