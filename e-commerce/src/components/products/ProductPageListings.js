@@ -81,7 +81,7 @@ const ProductPageListings = () => {
             )) : <div></div>}
       
           </div>
-          <div class="pagination">
+          <div className="pagination">
             <a href="/#">&laquo;</a>
             <a href="/#" class="active">01</a>
             <a href="/#">02</a>

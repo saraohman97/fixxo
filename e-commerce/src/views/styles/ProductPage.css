@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    margin-right: 190px
+    margin-right: 190px;
 
 }
 
@@ -58,7 +58,7 @@ justify-content: flex-start;
 /* Price */
 .price{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
 }
 .price .slider {
@@ -66,7 +66,7 @@ justify-content: flex-start;
 }
 
 /* Size CSS */
-.size{
+.product-page-size{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -82,7 +82,7 @@ justify-content: flex-start;
     margin: 0;
 }
 
-.color{
+.product-page-color{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -252,6 +252,91 @@ justify-content: flex-start;
 .price{
     margin-bottom: 25px;
 }
+
+
+/* Breakpoints */
+@media (max-width: 1385px) {
+    .product-page{
+        margin-right: 50px;
+    }
+
+
+  
+}
+
+@media (max-width: 1200px) {
+    /* ...
+    // rules here apply to devices from 993px to 1200px (inclusive)
+    ... */
+    .product-page-div{
+        width: 1000px;
+    }
+    .product-page-listings-filters{
+        width: 525px;
+    }
+    .product-page{
+        margin-right: 0px;
+    }
+    .product-page{
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .product-page-filter{
+        flex-direction: row;
+        width: 740px;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .product-page-ind-filters{
+        width: 210px;
+    }
+    
+
+}
+@media (max-width: 992px) {       
+    /* // rules here apply to devices from 769px to 992px (inclusive)
+    ... */
+    .product-page-div{
+        width: 600px;
+    }
+    
+    
+
+}
+@media (max-width: 768px) {
+    /* ...
+    // rules here apply to devices from 0px to 768px (inclusive)
+    ... */
+    .product-page-filter{
+        width: 500px;
+        margin-left: 0px;
+    }
+    .sorting-options{
+        width: 200px;
+    }
+
+}
+@media (max-width: 600px) {
+    /* ...
+    // rules here apply to devices from 0px to 768px (inclusive)
+    ... */
+    .product-page-filter{
+        flex-direction: column;
+        width: 340px;
+        flex-wrap: wrap;
+        gap: 25px;
+        align-items: center;
+    }
+    .product-page-listings-filters{
+        width: 360px;
+    }
+    .product-page-div{
+        width: 300px;
+    }
+
+}
+
 
 
 

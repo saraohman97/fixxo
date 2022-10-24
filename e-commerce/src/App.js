@@ -15,7 +15,7 @@ import SecondNavbar from './components/navbar/SecondNavbar.js';
 function App() {
   return (
     <div className="App">
-       <SecondNavbar />
+       {/* <SecondNavbar /> */}
       <Routes>
         <Route path='/' element={ <Home /> } />
         <Route path='/products' element={ <ProductPage /> } />
@@ -24,7 +24,7 @@ function App() {
         <Route path="/blogdetails" element={ <BlogDetails /> } />
       </Routes>
       
-      <Footer />
+      {/* <Footer /> */}
       {/* <PopUp /> */}
     </div>
   );
