@@ -234,14 +234,16 @@ ul.steps-list li a {
 }
 
 /* media queries */
-@media (max-width: 563px) {
+@media (max-width: 576px) {
   .intro-container {
-    max-width: 530px;
+    max-width: 576px;
+    margin: 0 auto;
+    font-size: 0.9rem;
   }
 
   .pdtdetails-container {
     display: block;
-    margin-top: -7rem;
+    margin-top: 0rem;
   }
   .pdt-images {
     display: flex;
@@ -249,6 +251,7 @@ ul.steps-list li a {
     align-items: center;
     justify-content: center;
     width: 400px;
+    margin-top: -6rem;
   }
   .pdt-images img.main-img {
     width: 380px;
@@ -265,10 +268,15 @@ ul.steps-list li a {
   }
 
   .pdt-specs h1 {
-    margin-top: -4rem;
+    margin-top: 3rem;
   }
   .add-to-cart {
     font-size: 0.8rem;
+  }
+
+  .steps {
+    font-size: 0.9rem;
+    margin-top: 1rem;
   }
 
   .product-description ul.steps-list {
@@ -280,21 +288,34 @@ ul.steps-list li a {
     margin-right: 0.6rem;
   }
 
-  .related-pdts-img {
-    /* display: grid;
-    grid-template-columns: auto auto; */
+  div.related-pdts-img {
     display: block;
-    text-align: center;
-    margin: 0 auto;
-    width: 380px;
-    transform: translateX(20%);
+  }
+  .card {
+    transform: translateX(30%);
   }
 }
 
 @media (max-width: 768px) {
+  .intro-container {
+    max-width: 50%;
+    /* max-width: 768px; */
+  }
   .pdtdetails-container {
     display: block;
+    font-size: 0.9rem;
     margin-top: -1rem;
+  }
+  .steps {
+    font-size: 0.9rem;
+  }
+
+  .add-to-cart {
+    padding: 0.5rem;
+  }
+
+  .pdt-specs {
+    margin-top: -7rem;
   }
 
   .product-description ul.steps-list {
@@ -304,7 +325,7 @@ ul.steps-list li a {
   .related-pdts-img {
     display: grid;
     grid-template-columns: auto auto;
-    margin: 0 auto;
+    gap: 20px;
   }
 
   h1.promo {
@@ -314,10 +335,10 @@ ul.steps-list li a {
 
 @media (max-width: 992px) {
   .intro-container {
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-
   }
+
   .pdt-images {
     width: 400px;
   }
@@ -333,5 +354,23 @@ ul.steps-list li a {
   .small-img {
     width: 130px;
     margin-right: 0.42rem;
+  }
+
+  .add-to-cart {
+    padding: 0.4rem 2rem;
+    font-size: 0.5rem;
+  }
+
+  .pdt-specs {
+    line-height: 1.4;
+  }
+
+  .product-description ul.steps-list {
+    width: 100%;
+  }
+  .related-pdts-img {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
   }
 }
