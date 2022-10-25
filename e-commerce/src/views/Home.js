@@ -35,6 +35,9 @@ const Home = () => {
                         <i className="fa-regular fa-heart"><small className='number'>1</small></i>
                         <i className="fa-solid fa-bag-shopping"><small className='number'>3</small></i>
                     </div>
+
+                    <i className="fa-solid fa-bars"></i>
+                    
                 </div>
 
             </div>
