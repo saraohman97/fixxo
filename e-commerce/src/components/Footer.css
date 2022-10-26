@@ -40,3 +40,33 @@
     font-size: .6rem;
     color: #616365;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    
+}
+@media (max-width: 992px) {      
+    
+}
+@media (max-width: 768px) {
+   .footer {
+    flex-direction: column;
+   }
+   .footer-mobile {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+   }
+   .app-btns {
+    flex-direction: column;
+   }
+   .home-page-lower.fa-brands {
+    font-size: 2rem;
+   }
+   .social-icons {
+    justify-content: center;
+    gap: 2rem;
+   }
+}
