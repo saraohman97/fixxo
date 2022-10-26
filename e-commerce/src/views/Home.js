@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import './styles/Home.css'
 import React from 'react'
+import useWindowDimensions from '../hooks/useWindowWidth'
 
 import headerImg1 from '../img/header-img-1.svg'
 import headerImg2 from '../img/header-img-2.svg'
@@ -13,6 +14,8 @@ import ProductSales from '../components/homes/ProductSales'
 
 
 const Home = () => {
+    const { height, width } = useWindowDimensions();
+
 return (
         <div className='home'>
             <div className="header">
@@ -142,12 +145,25 @@ return (
             <FlashSaleShowcase />
             <BestSellingSection />
             <div className='section-divider'></div>
+            {width > 768 ?
             <div className='info-circles'>
+            <InfoCircles icon={'/img/customer-service.svg'} title={'Customer Support'} text={'Village did removed enjoyed explain talking.'} />
+            <InfoCircles icon={'/img/credit-card (1).svg'} title={'Secured Payment'} text={'Village did removed enjoyed explain talking.'} />
+            <InfoCircles icon={'/img/delivery-truck.svg'} title={'Free Home Delivery'} text={'Village did removed enjoyed explain talking.'} />
+            <InfoCircles icon={'/img/delivery-truck.svg'} title={'30 Day Reuters'} text={'Village did removed enjoyed explain talking.'} />
+        </div> :
+        <div className='info-circles'>
+            <div className='info-circles-mobile'>
                 <InfoCircles icon={'/img/customer-service.svg'} title={'Customer Support'} text={'Village did removed enjoyed explain talking.'} />
                 <InfoCircles icon={'/img/credit-card (1).svg'} title={'Secured Payment'} text={'Village did removed enjoyed explain talking.'} />
+            </div>
+            <div className='info-circles-mobile'>
                 <InfoCircles icon={'/img/delivery-truck.svg'} title={'Free Home Delivery'} text={'Village did removed enjoyed explain talking.'} />
                 <InfoCircles icon={'/img/delivery-truck.svg'} title={'30 Day Reuters'} text={'Village did removed enjoyed explain talking.'} />
             </div>
+            </div>    
+        
+        }
         </div>
     )
 }
