@@ -29,7 +29,7 @@ body {
 }
 
 /* BTN WHITE */
-.btn {
+.home .btn {
   cursor: pointer;
   font-weight: 600;
   position: relative;
@@ -40,7 +40,7 @@ body {
   border: none;
 }
 
-.btn::before {
+.home .btn::before {
   content: "";
   position: absolute;
   left: 10px;
@@ -52,7 +52,7 @@ body {
   border-top: 2px solid #000;
 }
 
-.btn::after {
+.home .btn::after {
   content: "";
   position: absolute;
   right: 10px;
@@ -65,13 +65,13 @@ body {
 }
 
 /* BTN PINK */
-.btn-pink {
+.home .btn-pink {
   background-color: var(--clr-pink);
   color: white;
 }
 
-.btn-pink::before,
-.btn-black::before {
+.home .btn-pink::before,
+.home .btn-black::before {
   content: "";
   position: absolute;
   left: 10px;
@@ -83,8 +83,8 @@ body {
   border-top: 2px solid white;
 }
 
-.btn-pink::after,
-.btn-black::after {
+.home .btn-pink::after,
+.home .btn-black::after {
   content: "";
   position: absolute;
   right: 10px;
@@ -97,7 +97,7 @@ body {
 }
 
 /* BTN BLACK */
-.btn-black {
+.home .btn-black {
   background-color: black;
   color: white;
 }
@@ -106,7 +106,10 @@ body {
 /* HOME - HEADER */
 .home .header {
   background-color: var(--clr-showcase-bg);
-  height: 85vh;
+}
+.home .fa-bars {
+  font-size: x-large;
+  display: none;
 }
 
 .home .header .container .menu {
@@ -188,6 +191,13 @@ body {
   height: 73vh;
 }
 
+.home .showcase .text {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translate(-50%)
+}
+
 .home .showcase .text h1 {
   font-weight: 800;
   font-size: 65px;
@@ -225,7 +235,7 @@ body {
 .home .second-showcase .container .first-placeholder p,
 .home .second-showcase .container .second-placeholder p {
   margin-block: 1rem;
-  max-width: 55%;
+  max-width: 500px;
 }
 
 .home .second-showcase .container .second-placeholder {

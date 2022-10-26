@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import './styles/Home.css'
 import React from 'react'
 import useWindowDimensions from '../hooks/useWindowWidth'
+import './styles/HomeMedia.css'
 
 import headerImg1 from '../img/header-img-1.svg'
 import headerImg2 from '../img/header-img-2.svg'
@@ -40,6 +41,9 @@ return (
                         </div>
                     </div>
 
+
+                    <i className="fa-solid fa-bars"></i>
+                    
                 </div>
 
                 <div className="showcase">
@@ -53,6 +57,9 @@ return (
 
                     <img src={headerImg2} alt="showcase background person" />
                 </div>
+
+
+                <img src={headerImg2} className='d-none' alt="showcase background person" />
             </div>
 
             <div className="second-showcase">
