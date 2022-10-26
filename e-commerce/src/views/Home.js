@@ -55,11 +55,11 @@ return (
                         <button className='btn btn-pink'>SHOP NOW</button>
                     </div>
 
-                    <img src={headerImg2} alt="showcase background person" />
+                    <img src={headerImg2} className='d-none' alt="showcase background person" />
+                    {/* <img src={headerImg2} alt="showcase background person" /> */}
                 </div>
 
 
-                <img src={headerImg2} className='d-none' alt="showcase background person" />
             </div>
 
             <div className="second-showcase">

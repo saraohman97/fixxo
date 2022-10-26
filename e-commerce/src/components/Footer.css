@@ -28,14 +28,14 @@
     display: flex;
     flex-direction: column;
 }
-.social-icons {
+.footer .social-icons {
     display: flex;
     gap: .8rem;
 }
-.social-icons i {
+.footer .social-icons i {
     cursor: pointer;
 }
-.c-fixxo{
+.footer .c-fixxo{
     text-align: center;
     font-size: .6rem;
     color: #616365;
@@ -59,13 +59,13 @@
     display: flex;
     justify-content: space-between;
    }
-   .app-btns {
+   .footer .app-btns {
     flex-direction: column;
    }
    .home-page-lower.fa-brands {
     font-size: 2rem;
    }
-   .social-icons {
+   .footer .social-icons {
     justify-content: center;
     gap: 2rem;
    }

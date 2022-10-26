@@ -7,6 +7,7 @@ import SecondNavbar from '../components/navbar/SecondNavbar';
 const ProductPage = () => {
     return(
         <>
+        <SecondNavbar />
         <div className="product-page">
             <ProductpageFilter />
             <ProductPageListings />

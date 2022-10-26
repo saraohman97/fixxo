@@ -24,7 +24,7 @@ function App() {
         <Route path="/blogdetails" element={ <BlogDetails /> } />
       </Routes>
       
-      {/* <Footer /> */}
+      <Footer />
       {/* <PopUp /> */}
     </div>
   );

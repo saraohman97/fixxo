@@ -25,7 +25,7 @@
     }
    
 
-    .sub-profile {
+    .blog-details-layout .sub-profile {
         font-size: 1rem;
         padding: 0.8rem 0.6rem;
         }
@@ -45,7 +45,7 @@
         flex-direction: row;
         gap: .8rem;
     }
-    p{
+    .blog-details-layout p{
         margin-left: 0.3rem;
     }
     .blog-details-categories{
@@ -82,7 +82,7 @@
     padding: 0.6rem 1.2rem;
     margin: 2rem;
 }
-   .input-name{
+.blog-details-layout .input-name{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -121,7 +121,7 @@
         font-size: 2rem;
     }
 
-     button{
+    .blog-details-layout button{
         padding: 0.2rem 0.6rem;
             }
     

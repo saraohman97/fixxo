@@ -15,7 +15,7 @@ body {
   width: 70%;
   margin: 0 auto;
 }
-div .promo {
+.intro-container div .promo {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
@@ -23,19 +23,19 @@ div .promo {
   margin-top: 1rem;
 }
 
-.home-list {
+.intro-container .home-list {
   list-style: none;
   display: flex;
   margin-bottom: 2rem;
 }
 
-.home-list li {
+.intro-container .home-list li {
   margin-right: 0.3rem;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
 }
-.fa-house,
-.fa-greater-than {
+.intro-container .fa-house,
+.intro-container .fa-greater-than {
   font-size: 0.8rem;
   margin-right: 0.3rem;
 }
@@ -56,40 +56,40 @@ div .promo {
   margin: 0;
 }
 
-.brand {
+.intro-container .brand {
   font-size: 0.8rem;
   display: flex;
 }
-.brand span {
+.intro-container .brand span {
   margin-right: 0.5rem;
 }
 
-.stars {
+.intro-container .stars {
   color: #ff7373;
 }
-.price {
+.intro-container .price {
   font-family: "Poppins", sans-serif;
   font-size: 1.1;
   font-weight: 300;
 }
-.description p {
+.intro-container .description p {
   color: #616365;
 }
 
-.description p a {
+.intro-container .description p a {
   text-decoration: none;
 }
 
-.sizes {
+.intro-container .sizes {
   display: flex;
   align-items: center;
   margin-top: 1rem;
 }
 
-.size {
+.intro-container .size {
   margin-right: 2rem;
 }
-.size-btn button {
+.intro-container .size-btn button {
   margin-right: 0.4rem;
   height: 40px;
   width: 40px;
@@ -100,7 +100,7 @@ div .promo {
   margin-left: 1.6rem;
   padding: 0.5rem 2rem;
 } */
-.color {
+.intro-container .color {
   display: grid;
   grid-template-columns: auto auto;
   margin: auto;
@@ -117,7 +117,7 @@ div .promo {
   padding: 0.5rem 1rem;
 }
 
-.add-to-cart {
+.intro-container .add-to-cart {
   margin-left: 1rem;
   font-size: 1rem;
   font-weight: 700;
@@ -134,19 +134,19 @@ div .promo {
 .share {
   margin-top: 1rem;
 }
-.share {
+.intro-container .share {
   display: flex;
   justify-content: flex-start;
 }
 
-.brand-specs {
+.intro-container .brand-specs {
   margin-left: 1.5rem;
 }
 
-.fa-brands {
+.intro-container .fa-brands {
   margin-right: 1rem;
 }
-.small-images {
+.intro-container .small-images {
   width: 540px;
   display: flex;
   justify-content: space-between;
@@ -165,27 +165,27 @@ div .promo {
   font-size: 1rem;
 }
 
-li.active a {
+.intro-container li.active a {
   color: #ff7373 !important;
   border-bottom: 1px solid #ff7373;
 }
 
-ul.steps-list li a {
+.intro-container ul.steps-list li a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: #616365;
 }
 
-.steps {
+.intro-container .steps {
   margin-top: 1rem;
   font-size: 1rem;
   color: #616365;
 }
-.steps p {
+.intro-container .steps p {
   margin-bottom: 1rem;
 }
 
-.steps ul {
+.intro-container .steps ul {
   margin-left: 1rem;
 }
 
@@ -218,17 +218,17 @@ ul.steps-list li a {
   max-height: 323px;
   max-width: 255px;
 }
-.category p.blouse,
-.category p.price {
+.intro-container .category p.blouse,
+.intro-container .category p.price {
   color: #23262a;
   font-size: 1rem;
   font-weight: 600;
 }
-.category p.price {
+.intro-container .category p.price {
   font-size: 1.1rem;
 }
 
-.pdt-images {
+.intro-container .pdt-images {
   height: 620px;
   width: 540px;
 }
@@ -257,12 +257,12 @@ ul.steps-list li a {
     width: 380px;
     margin-bottom: 1rem;
   }
-  .small-images {
+  .intro-container .small-images {
     width: 400px;
     justify-content: center;
   }
 
-  .small-img {
+  .intro-container .small-img {
     width: 120px;
     margin-right: 0.42rem;
   }
@@ -270,11 +270,11 @@ ul.steps-list li a {
   .pdt-specs h1 {
     margin-top: 3rem;
   }
-  .add-to-cart {
+  .intro-container .add-to-cart {
     font-size: 0.8rem;
   }
 
-  .steps {
+  .intro-container .steps {
     font-size: 0.9rem;
     margin-top: 1rem;
   }
@@ -291,7 +291,7 @@ ul.steps-list li a {
   div.related-pdts-img {
     display: block;
   }
-  .card {
+  .intro-container .card {
     transform: translateX(30%);
   }
 }
@@ -306,11 +306,11 @@ ul.steps-list li a {
     font-size: 0.9rem;
     margin-top: -1rem;
   }
-  .steps {
+  .intro-container .steps {
     font-size: 0.9rem;
   }
 
-  .add-to-cart {
+  .intro-container .add-to-cart {
     padding: 0.5rem;
   }
 
@@ -328,7 +328,7 @@ ul.steps-list li a {
     gap: 20px;
   }
 
-  h1.promo {
+  .intro-container h1.promo {
     text-align: justify;
   }
 }
@@ -346,17 +346,17 @@ ul.steps-list li a {
     width: 400px;
     margin-bottom: 1rem;
   }
-  .small-images {
+  .intro-container .small-images {
     width: 400px;
     justify-content: center;
   }
 
-  .small-img {
+  .intro-container .small-img {
     width: 130px;
     margin-right: 0.42rem;
   }
 
-  .add-to-cart {
+  .intro-container .add-to-cart {
     padding: 0.4rem 2rem;
     font-size: 0.5rem;
   }
@@ -365,7 +365,7 @@ ul.steps-list li a {
     line-height: 1.4;
   }
 
-  .product-description ul.steps-list {
+  .intro-container .product-description ul.steps-list {
     width: 100%;
   }
   .related-pdts-img {

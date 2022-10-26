@@ -7,6 +7,7 @@ const ProductDetails = () => {
 
   return (
     <>
+    <SecondNavbar />
    
     <div className="intro-container">
       <div><h1 className='promo'>Get 25% OFF at the Fixxo selection-shop Now!</h1></div>

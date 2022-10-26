@@ -3,6 +3,7 @@ import BlogCard  from './BlogCard'
 import './blog.css'
 import './blogcard-styles.css'
 import BlogCategories  from './BlogCategories'
+import SecondNavbar from '../../components/navbar/SecondNavbar'
 /**
 * @Biruk
 * @Blog-page function
@@ -10,6 +11,9 @@ import BlogCategories  from './BlogCategories'
 
 const BlogPage = () => {
   return(
+    <>
+    <SecondNavbar />
+
     <div className='blog-details-layout'>
       
       <div className='blogcard-container'>
@@ -26,6 +30,7 @@ const BlogPage = () => {
        <BlogCategories/>
         </div>
     </div>
+    </>
    )
 
  }
