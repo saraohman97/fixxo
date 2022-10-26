@@ -6,12 +6,12 @@
   --clr-pink: #FF7373;
   --clr-grey: #BEBEBE;
 }
-
-* {
+/* Temp lösning för att fixa css på product page */
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 html,
 body {
