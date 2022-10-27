@@ -1,7 +1,10 @@
-{"blog":[
+{
+"blog":
+[
     {
     "type": "Blog",
-    "image": "http://example.com/images/image.jpg",
+    "id": 15,
+    "image": "https://images.unsplash.com/photo-1665680521183-1a77175d81dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60'",
     "url": "http://example.com/blog/post",
     "title": "My Blog post",
     "blogBody": "Paste the body of your content in here in plaintext",
@@ -14,7 +17,36 @@
 },
 {
     "type": "Blog",
-    "image": "http://example.com/images/image.jpg",
+    "id": 19,
+    "image": "https://images.unsplash.com/photo-1665680521183-1a77175d81dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60'",
+    "url": "http://example.com/blog/post",
+    "title": "My Blog post",
+    "blogBody": "Paste the body of your content in here in plaintext",
+    "datePublished": "2019-02-11T11:11:11",
+    "copyrightYear": "2019",
+    "author": "Patrick Coombe",
+    "tag": ["" , ""],
+    "blogCatagories" :["Team","Fashion"] ,
+    "mainEntityOfPage": "True"
+},
+{
+    "type": "Blog",
+    "id": 17,
+    "image": "https://images.unsplash.com/photo-1665680521183-1a77175d81dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60'",
+    "url": "http://example.com/blog/post",
+    "title": "My Blog post",
+    "blogBody": "Paste the body of your content in here in plaintext",
+    "datePublished": "2019-02-11T11:11:11",
+    "copyrightYear": "2019",
+    "author": "Patrick Coombe",
+    "tag": ["" , ""],
+    "blogCatagories" :["Team","Fashion"] ,
+    "mainEntityOfPage": "True"
+},
+{
+    "type": "Blog",
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1665680521183-1a77175d81dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60'",
     "url": "http://example.com/blog/post",
     "title": "My Blog post",
     "blogBody": "Paste the body of your content in here in plaintext",
@@ -28,7 +60,23 @@
 ,
 {
     "type": "Blog",
-    "image": "http://example.com/images/image.jpg",
+    "id": 22,
+    "image":  "https://images.unsplash.com/photo-1665680521183-1a77175d81dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60'",
+    "url": "http://example.com/blog/post",
+    "title": "My Blog post",
+    "blogBody": "Paste the body of your content in here in plaintext",
+    "datePublished": "2019-02-11T11:11:11",
+    "copyrightYear": "2019",
+    "author": "Patrick Coombe",
+    "tag": ["" , ""],
+    "blogCatagories" :["Team","Fashion"] ,
+    "mainEntityOfPage": "True"
+}
+,
+{
+    "type": "Blog",
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1665680521183-1a77175d81dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
     "url": "http://example.com/blog/post",
     "title": "My Blog post",
     "blogBody": "Paste the body of your content in here in plaintext",
@@ -44,7 +92,23 @@
         "id": 1,
         "name": "V-neck Jumper",
         "price": 199.00,
-        "image": "https://www2.hm.com/sv_se/productpage.1020398001.html",
+        "image": "https://images.unsplash.com/photo-1665680521183-1a77175d81dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60'",
+        "desc": "Knitted jumper with a V-neck front and back, dropped shoulders and long sleeves. Ribbing around the neckline, cuffs and hem.",
+        "rating": 5
+    },
+    {
+        "id": 5,
+        "name": "V-neck Jumper",
+        "price": 199.00,
+        "image": "https://images.unsplash.com/photo-1665680521183-1a77175d81dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60'",
+        "desc": "Knitted jumper with a V-neck front and back, dropped shoulders and long sleeves. Ribbing around the neckline, cuffs and hem.",
+        "rating": 5
+    },
+    {
+        "id": 8,
+        "name": "V-neck Jumper",
+        "price": 199.00,
+        "image": "https://images.unsplash.com/photo-1665680521183-1a77175d81dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60'",
         "desc": "Knitted jumper with a V-neck front and back, dropped shoulders and long sleeves. Ribbing around the neckline, cuffs and hem.",
         "rating": 5
     },
