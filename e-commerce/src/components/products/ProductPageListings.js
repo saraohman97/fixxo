@@ -2,17 +2,11 @@ import React, { useState, useEffect } from 'react';
 import SalesCard from './SalesCard'
 import axios from 'axios'
 
-// let option = 12;
-// let tempsalesCards = [];
-// for (let i = 0; i < option; i++) {
-//   tempsalesCards.push(<SalesCard/>);
-// }
-
-
-
 
 const ProductPageListings = () => {
+  let option = 12;
   const [salesCards, setSalesCards] =  useState();
+  const [salesCardsOption, setSalesCardsOption] =  useState();
 
   useEffect(() => {
     getAllProducts()
@@ -21,25 +15,39 @@ const ProductPageListings = () => {
   
 
   const getAllProducts = async () => {
-    const products = await axios.get("http://localhost:9999/products")
-    setSalesCards(products.data)
-    console.log(products.data)
+    await axios.get("http://localhost:9999/products")
+    .then(resp => {
+      setSalesCards(resp.data)
+      console.log(resp.data)
+      calcNrDisplay(resp.data);   
+    }) 
   }
-  // const calcNrDisplay = () => {
+  const calcNrDisplay = (products) => {
 
-  //   tempsalesCards = [];
-  //   for (let i = 0; i < option; i++) {
-  //     tempsalesCards.push(<SalesCard/>);
-  //   }
-  //   setSalesCards(tempsalesCards);
+    let tempsalesCards = [];
+    for (let i = 0; i < option; i++) {
+      console.log("wtf")
+      if(products)
+      {
+        console.log(products[i])
+        tempsalesCards.push(products[i]);
+      }
+      else{
+        console.log(salesCards[i])
+        tempsalesCards.push(salesCards[i]);
+      }
+      
+    }
+    setSalesCardsOption(tempsalesCards);
 
-  // }
+  }
   
 
   
   const handleChange = (e) => {
-    // option = e.target.value;
-    // calcNrDisplay();
+
+    option = e.target.value;
+    calcNrDisplay();
     console.log(salesCards);
   };
 
@@ -68,12 +76,12 @@ const ProductPageListings = () => {
           </div>
           
           <div className='product-page-listings'>
-            {salesCards ? salesCards.map((product) => (
+            {salesCardsOption ? salesCardsOption.map((product) => (
               <SalesCard key={product.id} product={product} />
             )) : <div></div>}
       
           </div>
-          <div class="pagination">
+          <div className="pagination">
             <a href="/#">&laquo;</a>
             <a href="/#" class="active">01</a>
             <a href="/#">02</a>

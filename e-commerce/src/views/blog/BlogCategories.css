@@ -7,13 +7,13 @@
 }
 
 
-.catagories-title{
+.blogCategories-conatiner .catagories-title{
         
        font-weight:700;
        justify-items:center;
       
 }
 
-div button{
+.blogCategories-conatiner div button{
     margin: 0.33rem 0.3rem;
 }

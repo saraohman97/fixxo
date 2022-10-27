@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../navbar/secondNavbar.css'
+import '../navbar/SecondNavbar.css'
 
 const SecondNavbar = () => {
   return (
@@ -20,18 +20,20 @@ const SecondNavbar = () => {
         </div>
 
         <div className="navbar-right">
-          <div>Login</div>
+          <div className='d-none'>Login</div>
 
-          <div>My Cart / $23.00</div>
+          <div className='d-none'>My Cart / $23.00</div>
 
           <div className="icons">
             <i className="fa-solid fa-magnifying-glass"></i>
-            <i className="fa-solid fa-code-compare"></i>
-            <i className="fa-regular fa-heart"><small className='number'>1</small></i>
+            <i className="fa-solid fa-code-compare d-none"></i>
+            <i className="fa-regular fa-heart d-none"><small className='number'>1</small></i>
             <i className="fa-solid fa-bag-shopping"><small className='number'>3</small></i>
           </div>
+
+          <i className="fa-solid fa-bars"></i>
         </div>
-        
+
       </div>
     </div>
   )

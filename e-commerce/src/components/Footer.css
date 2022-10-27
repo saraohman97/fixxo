@@ -28,15 +28,45 @@
     display: flex;
     flex-direction: column;
 }
-.social-icons {
+.footer .social-icons {
     display: flex;
     gap: .8rem;
 }
-.social-icons i {
+.footer .social-icons i {
     cursor: pointer;
 }
-.c-fixxo{
+.footer .c-fixxo{
     text-align: center;
     font-size: .6rem;
     color: #616365;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    
+}
+@media (max-width: 992px) {      
+    
+}
+@media (max-width: 768px) {
+   .footer {
+    flex-direction: column;
+   }
+   .footer-mobile {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+   }
+   .footer .app-btns {
+    flex-direction: column;
+   }
+   .home-page-lower.fa-brands {
+    font-size: 2rem;
+   }
+   .footer .social-icons {
+    justify-content: center;
+    gap: 2rem;
+   }
 }
