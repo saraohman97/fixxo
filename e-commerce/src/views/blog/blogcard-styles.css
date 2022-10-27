@@ -57,3 +57,12 @@
     background: #505f79;
     color: #fff;
   }
+.blog-nav {
+     display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 1rem 1.5rem;
+    margin-left: 2rem ;
+    transition: all 200ms ease-in-out;
+    list-style: none;
+  }

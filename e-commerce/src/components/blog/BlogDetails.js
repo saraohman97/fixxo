@@ -1,6 +1,6 @@
 import React from 'react'
-import  BlogCategories from './BlogCategoires'
-import BlogComment from '../blog/BlogComment'
+import  BlogCategories from '../../views/blog/BlogCategories'
+import BlogComment from '../../views/blog/BlogComment'
 import './blogdetails-styles.css'
 /**
 * @Biruk
@@ -13,6 +13,13 @@ const BlogDetails = () => {
     <div className='blog-details-layout'>
 
         <div className='blog-details'>
+        <div>
+       <ul className='blog-nav'>
+          <li> 
+            <i className="fa-solid fa-blog"> Blog </i> <i className="fa-solid fa-greater-than"> </i></li>
+             <li>Blog details</li>
+        </ul>
+       </div>
                     <div className='blog-section-details-one'>
                       <img className='blog-details-main-img' src= {'https://images.unsplash.com/photo-1665596553794-61961a0b40ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxODN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60'} alt='img'></img>
                       <div className='sub-profile'>

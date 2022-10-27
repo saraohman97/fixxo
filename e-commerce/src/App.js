@@ -1,35 +1,44 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-
-import Home from './views/Home.js'
-import ProductPage from './views/ProductPage.js'
+import './views/styles/ProductDetails.css'
 import ProductDetails from './views/ProductDetails';
-import BlogDetails from './views/blog/BlogDetails';
 
-import Footer from './components/Footer.js';
-import BlogPage from './views/blog/BlogPage.js';
-import SecondNavbar from './components/navbar/SecondNavbar.js';
-// import PopUp from './components/Modal/PopUp';
+import BlogPage from './views/blog/BlogPage';
 
+import Home from './views/Home'
+import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom'
+import ProductPage from './views/ProductPage'
+import PopUp from './components/Modal/PopUp';
+import SecondNavbar from './components/navbar/SecondNavbar';
+import React from 'react';
+import BlogDetails from './components/blog/BlogDetails';
 
 function App() {
+
+
   return (
+  
     <div className="App">
-       {/* <SecondNavbar /> */}
+    
+     <Routes>
+    </Routes>
+    <SecondNavbar />
+    
       <Routes>
-        <Route path='/' element={ <Home /> } />
-        <Route path='/products' element={ <ProductPage /> } />
-        <Route path='/details' element = { <ProductDetails/> } />
-        <Route path="/blogpage" element={ <BlogPage /> } />
-        <Route path="/blogdetails" element={ <BlogDetails /> } />
+          <Route path='/home' element = {<Home/>}/>
+          <Route path='/products' element = {<ProductDetails/>}/>
+          <Route path='/blogdetails' exact element={<BlogDetails/>}/>
+          <Route path='/blogpage' exact element={<BlogPage/>}/>
+        
       </Routes>
+      <ProductPage />
       
       <Footer />
+
+      {/* <Home /> */}
       {/* <PopUp /> */}
     </div>
   );
 }
-
 
 
 export default App;

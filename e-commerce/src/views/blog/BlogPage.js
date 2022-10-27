@@ -25,8 +25,15 @@ const BlogPage = () => {
   return (
     <>
     <div className='blog-details-layout'>
+   
+       <ul className='blog-nav'>
+          <li> 
+            <i className="fa-solid fa-blog"></i> Blog <i className="fa-solid fa-greater-than"></i></li>
+            <li>Blog Page</li>
+        </ul>
       
       <div className='blogcard-container'>
+   
       {blogCards ? blogCards.map((blog) => (
               <BlogCard key={blog.id} blog={blog} />
             )) : <div></div>}
