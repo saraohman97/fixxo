@@ -40,10 +40,10 @@ const  BlogCategories = () => {
         <hr/>
       </strong>
 
-      <button> book </button>
-      <button>car </button>
-      <button> book </button>
-      <button>car </button>
+      <button className='tag-buttons'> book </button>
+      <button className='tag-buttons'>car </button>
+      <button className='tag-buttons'> book </button>
+      <button className='tag-buttons'>car </button>
       
     </div>
     </>

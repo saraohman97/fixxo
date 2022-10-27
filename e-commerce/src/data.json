@@ -127,6 +127,102 @@
         "image": "https://www2.hm.com/sv_se/productpage.1011165005.html",
         "desc": "Short jumper in a soft knit with a stand-up collar, zip down the front, long balloon sleeves and ribbing at the cuffs and hem.",
         "rating": 5
+    },
+    {
+        "id": 4,
+        "name": "V-neck Jumper",
+        "price": 199.00,
+        "image": "https://www2.hm.com/sv_se/productpage.1020398001.html",
+        "desc": "Knitted jumper with a V-neck front and back, dropped shoulders and long sleeves. Ribbing around the neckline, cuffs and hem.",
+        "rating": 5
+    },
+    {
+        "id": 5,
+        "name": "Sweater vest",
+        "price": 99.00,
+        "image": "https://www2.hm.com/sv_se/productpage.1016459002.html",
+        "desc": "V-neck sweater vest in a double knit with a ribbed trim around the neckline, armholes and hem.",
+        "rating": 5
+    },
+    {
+        "id": 6,
+        "name": "Zip-up jumper",
+        "price": 199.00,
+        "image": "https://www2.hm.com/sv_se/productpage.1011165005.html",
+        "desc": "Short jumper in a soft knit with a stand-up collar, zip down the front, long balloon sleeves and ribbing at the cuffs and hem.",
+        "rating": 5
+    },
+    {
+        "id": 7,
+        "name": "V-neck Jumper",
+        "price": 199.00,
+        "image": "https://www2.hm.com/sv_se/productpage.1020398001.html",
+        "desc": "Knitted jumper with a V-neck front and back, dropped shoulders and long sleeves. Ribbing around the neckline, cuffs and hem.",
+        "rating": 5
+    },
+    {
+        "id": 8,
+        "name": "Sweater vest",
+        "price": 99.00,
+        "image": "https://www2.hm.com/sv_se/productpage.1016459002.html",
+        "desc": "V-neck sweater vest in a double knit with a ribbed trim around the neckline, armholes and hem.",
+        "rating": 5
+    },
+    {
+        "id": 9,
+        "name": "Zip-up jumper",
+        "price": 199.00,
+        "image": "https://www2.hm.com/sv_se/productpage.1011165005.html",
+        "desc": "Short jumper in a soft knit with a stand-up collar, zip down the front, long balloon sleeves and ribbing at the cuffs and hem.",
+        "rating": 5
+    },
+    {
+        "id": 10,
+        "name": "V-neck Jumper",
+        "price": 199.00,
+        "image": "https://www2.hm.com/sv_se/productpage.1020398001.html",
+        "desc": "Knitted jumper with a V-neck front and back, dropped shoulders and long sleeves. Ribbing around the neckline, cuffs and hem.",
+        "rating": 5
+    },
+    {
+        "id": 11,
+        "name": "Sweater vest",
+        "price": 99.00,
+        "image": "https://www2.hm.com/sv_se/productpage.1016459002.html",
+        "desc": "V-neck sweater vest in a double knit with a ribbed trim around the neckline, armholes and hem.",
+        "rating": 5
+    },
+    {
+        "id": 12,
+        "name": "Zip-up jumper",
+        "price": 199.00,
+        "image": "https://www2.hm.com/sv_se/productpage.1011165005.html",
+        "desc": "Short jumper in a soft knit with a stand-up collar, zip down the front, long balloon sleeves and ribbing at the cuffs and hem.",
+        "rating": 5
+    },
+    {
+        "id": 13,
+        "name": "V-neck Jumper",
+        "price": 199.00,
+        "image": "https://www2.hm.com/sv_se/productpage.1020398001.html",
+        "desc": "Knitted jumper with a V-neck front and back, dropped shoulders and long sleeves. Ribbing around the neckline, cuffs and hem.",
+        "rating": 5
+    },
+    {
+        "id": 14,
+        "name": "Sweater vest",
+        "price": 99.00,
+        "image": "https://www2.hm.com/sv_se/productpage.1016459002.html",
+        "desc": "V-neck sweater vest in a double knit with a ribbed trim around the neckline, armholes and hem.",
+        "rating": 5
+    },
+    {
+        "id": 15,
+        "name": "Zip-up jumper",
+        "price": 199.00,
+        "image": "https://www2.hm.com/sv_se/productpage.1011165005.html",
+        "desc": "Short jumper in a soft knit with a stand-up collar, zip down the front, long balloon sleeves and ribbing at the cuffs and hem.",
+        "rating": 5
     }
 ]
 }

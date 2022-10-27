@@ -191,44 +191,43 @@
 
 
 
-#slider {
+.blog-card #slider {
   height:330px;
   width:400px;
-  overflow:hidden;
+  overflow: scroll;
   margin-left:-35px;
   margin-top:-15px;
   float:left;
-
 }
 
 
 
-#slider ul {
+.blog-card #slider ul {
   list-style: none;  
   height:200px;
   width:5500px;
   position:relative;
 }
 
-#slider li {
+.blog-card #slider li {
   display: inline;
 }
 
-#mouseover {
+.blog-card #mouseover {
   height: 45px;
   width: 45px;
   margin: 50px;
   background-color: #ccc;
 }
 
-#slider_btns {
+.blog-card #slider_btns {
   list-style: none;
   width: 290px;
   text-align: center;
   margin-top: -0px;
 }
 
-#slider_btns li {
+.blog-card #slider_btns li {
   display: inline-block;
   background: #ebebeb;
   height: 15px;
@@ -239,15 +238,15 @@
   cursor: pointer;
 }
 
-#slider_btns li.active {
+.blog-card #slider_btns li.active {
   border-color: red;
 }
 
-.buttonBox span, .buttonBox ul {
+.blog-card .buttonBox span, .buttonBox ul {
   float: left;
 }
 
-.buttonBox span {
+.blog-card .buttonBox span {
   display: inline-block;
   font-family: sans-serif;
   padding: 5px;

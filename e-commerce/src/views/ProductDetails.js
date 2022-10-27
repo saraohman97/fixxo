@@ -8,6 +8,7 @@ const ProductDetails = () => {
   return (
     <>
     <SecondNavbar />
+   
     <div className="intro-container">
       <div><h1 className='promo'>Get 25% OFF at the Fixxo selection-shop Now!</h1></div>
       <div className="home">
@@ -16,10 +17,10 @@ const ProductDetails = () => {
           <li>product signal</li>
         </ul>
       </div>
-      <div className="details-container">
+      <div className="pdtdetails-container">
         <div className="pdt-images" >
           {/* <img src="../images/main.png" alt="main-img" style={{backgroundColor:'red'}} /> */}
-          <img src="https://via.placeholder.com/540X444" alt="" />
+          <img src="https://via.placeholder.com/540X444" alt="" className='main-img' />
           <div className="small-images">
             <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
             <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
@@ -71,7 +72,7 @@ const ProductDetails = () => {
             <span><button className=' add-to-cart'>ADD TO CART</button></span>
           </div>
 
-          <div className="share">
+          <div className="share" >
             <span>Share:</span>
             <div className="brand-specs">
               <i className="fa-brands fa-facebook"></i>

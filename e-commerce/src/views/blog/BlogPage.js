@@ -23,6 +23,7 @@ const BlogPage = () => {
      console.log(blogs.data)
      }
   return (
+    <>
     <div className='blog-details-layout'>
       
       <div className='blogcard-container'>
@@ -36,6 +37,7 @@ const BlogPage = () => {
           <BlogCategories/>
       </div>
     </div>
+    </>
    )
 
  }
