@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import './styles/Home.css'
+import {useState} from 'react'
 import React from 'react'
 import useWindowDimensions from '../hooks/useWindowWidth'
 import './styles/HomeMedia.css'
@@ -13,11 +14,14 @@ import FlashSaleShowcase from '../components/homes/FlashSaleShowcase'
 import InfoCircles from '../components/homes/InfoCircles'
 import ProductSales from '../components/homes/ProductSales'
 
+import Menu from '../components/Menu/Menu'
+
 
 const Home = () => {
     const { height, width } = useWindowDimensions();
+    const [showMenu, setShowMenu] = useState(false)
 
-return (
+    return (
         <div className='home'>
             <div className="header">
                 <div className="container">
@@ -41,8 +45,8 @@ return (
                         </div>
                     </div>
 
-
-                    <i className="fa-solid fa-bars"></i>
+                    <button className='button' onClick={() => setShowMenu(true)}><i className="fa-solid fa-bars"></i></button>
+                    {showMenu && <Menu setShowMenu={setShowMenu} />}
                     
                 </div>
 
@@ -56,7 +60,6 @@ return (
                     </div>
 
                     <img src={headerImg2} className='d-none' alt="showcase background person" />
-                    {/* <img src={headerImg2} alt="showcase background person" /> */}
                 </div>
 
 
@@ -169,7 +172,6 @@ return (
                 <InfoCircles icon={'/img/delivery-truck.svg'} title={'30 Day Reuters'} text={'Village did removed enjoyed explain talking.'} />
             </div>
             </div>    
-        
         }
         </div>
     )

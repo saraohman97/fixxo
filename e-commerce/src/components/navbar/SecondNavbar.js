@@ -1,8 +1,14 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../navbar/SecondNavbar.css'
+import Menu from '../Menu/Menu'
 
 const SecondNavbar = () => {
+
+  const [showMenu, setShowMenu] = useState(false)
+
+
   return (
     <div className='second-navbar'>
       <div className="container">
@@ -31,7 +37,8 @@ const SecondNavbar = () => {
             <i className="fa-solid fa-bag-shopping"><small className='number'>3</small></i>
           </div>
 
-          <i className="fa-solid fa-bars"></i>
+          <button className='button' onClick={() => setShowMenu(true)}><i className="fa-solid fa-bars"></i></button>
+          {showMenu && <Menu setShowMenu={setShowMenu} />}
         </div>
 
       </div>

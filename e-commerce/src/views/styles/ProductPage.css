@@ -58,7 +58,6 @@ justify-content: flex-start;
 /* Price */
 .product-page .price{
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
 }
 .product-page .price .slider {
@@ -174,8 +173,6 @@ justify-content: flex-start;
     width: 825px;
     align-items: center;
     justify-content: space-between;
-
-    
 }
 .product-page-listings{
     display: flex;
@@ -196,11 +193,9 @@ justify-content: flex-start;
 }
 
 /* Show Options */
-.show-options-label
-{
+.show-options-label {
     color: #616365;
     font-weight: 500;
-    
 }
 .show-options-select{
     width: 54px;
@@ -221,16 +216,17 @@ justify-content: flex-start;
    align-items: ce;
    margin-bottom: 50px;
 }
-  
+
 .product-page .pagination a {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #616365;
-    padding: 10px 10px;
     text-decoration: none;
     transition: #FF7373 .3s;
     background-color: #F4F4F4;
-    border-radius: 1000px;
+    border-radius: 50%;
+    padding: 1rem;
     margin: 10px;
     width: 25px;
     height: 25px;
@@ -259,15 +255,9 @@ justify-content: flex-start;
     .product-page{
         margin-right: 50px;
     }
-
-
-  
 }
 
 @media (max-width: 1200px) {
-    /* ...
-    // rules here apply to devices from 993px to 1200px (inclusive)
-    ... */
     .product-page-div{
         width: 1000px;
     }
@@ -291,23 +281,15 @@ justify-content: flex-start;
     .product-page-ind-filters{
         width: 210px;
     }
-    
-
 }
+
 @media (max-width: 992px) {       
-    /* // rules here apply to devices from 769px to 992px (inclusive)
-    ... */
     .product-page-div{
         width: 600px;
     }
-    
-    
-
 }
+
 @media (max-width: 768px) {
-    /* ...
-    // rules here apply to devices from 0px to 768px (inclusive)
-    ... */
     .product-page-filter{
         width: 500px;
         margin-left: 0px;
@@ -315,12 +297,9 @@ justify-content: flex-start;
     .sorting-options{
         width: 200px;
     }
-
 }
+
 @media (max-width: 600px) {
-    /* ...
-    // rules here apply to devices from 0px to 768px (inclusive)
-    ... */
     .product-page-filter{
         flex-direction: column;
         width: 340px;
@@ -334,9 +313,4 @@ justify-content: flex-start;
     .product-page-div{
         width: 300px;
     }
-
 }
-
-
-
-
