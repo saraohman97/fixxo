@@ -2,6 +2,11 @@
 .second-navbar {
     background-color: white;
     box-shadow: 0 0 10px lightgray;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
 }
 .second-navbar .container{
     width: 90%;
@@ -16,6 +21,10 @@
 .second-navbar .fa-bars {
     font-size: x-large;
     display: none;
+}
+.second-navbar .button {
+    background-color: transparent;
+    border: none;
 }
 .second-navbar .container .navbar-left {
     display: flex;

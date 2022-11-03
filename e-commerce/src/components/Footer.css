@@ -41,6 +41,65 @@
     color: #616365;
 }
 
+
+/* MER FOOTER? */
+.bg-c-fixxo {
+    background-color: #F8F8F8;
+    border-top: 1px solid #b3b7bb;
+    padding: .3rem;
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-block: 2rem;
+    gap: 5rem;
+  }
+  
+  .footer .customer-service {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+  }
+  
+  .footer .credit-card {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+  }
+  
+  .footer .our-stores {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+  }
+  
+  .footer h5 {
+    margin-bottom: .5rem;
+  }
+  
+  .footer p {
+    color: #616365;
+    font-size: .8rem;
+    font-weight: 500;
+  }
+  
+  .app-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .footer .app-btns {
+    display: flex;
+    gap: 1rem;
+  
+  }
+  
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px) {

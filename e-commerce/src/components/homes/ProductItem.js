@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import grayBox from '../../img/gray-box.svg'
 import star from '../../img/star.svg'
 
 const ProductItem = () => {
   return (
-    <div className='product-item'>
+    <Link to='/details' className='product-item'>
 
       <div className="quick-view">QUICK VIEW</div>  
       <div className="featured-icons">
@@ -27,7 +28,7 @@ const ProductItem = () => {
           </div>
           <div>$30.00</div>
         </div>
-    </div>
+    </Link>
   )
 }
 
