@@ -6,7 +6,6 @@
   --clr-pink: #FF7373;
   --clr-grey: #BEBEBE;
 }
-/* Temp lösning för att fixa css på product page */
 * {
   margin: 0;
   padding: 0;
@@ -27,13 +26,17 @@ body {
   display: flex;
 }
 
+.home a {
+  text-decoration: none;
+  color: black;
+}
+
 /* BTN WHITE */
 .home .btn {
   cursor: pointer;
   font-weight: 600;
   position: relative;
   background-color: #fff;
-  /* padding: 1.5rem 0.75rem; */
   width: 180px;
   height: 50px;
   border: none;
@@ -102,6 +105,10 @@ body {
 }
 
 
+
+
+
+
 /* HOME - HEADER */
 .home .header {
   background-color: var(--clr-showcase-bg);
@@ -109,6 +116,10 @@ body {
 .home .fa-bars {
   font-size: x-large;
   display: none;
+}
+.home .button {
+  background-color: transparent;
+  border: none;
 }
 
 .home .header .container .menu {
@@ -501,7 +512,6 @@ body {
   grid-template-columns: minmax(auto, 280px) auto;
   gap: 1rem;
   padding-right: 3rem;
-  /* flex: auto; */
 }
 
 .sales-card-wrapper-lower {
@@ -580,7 +590,6 @@ body {
 
 .top-selling-section {
   margin-block: 2rem;
-
 }
 
 .selling-section .small-sales-card {
@@ -668,173 +677,3 @@ body {
   font-weight: 500;
   font-size: .8rem;
 }
-
-/* FOOTER */
-.bg-c-fixxo {
-  background-color: #F8F8F8;
-  border-top: 1px solid #b3b7bb;
-  padding: .3rem;
-  text-align: center;
-}
-
-.footer {
-  background-color: #F8F8F8;
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  padding-block: 2rem;
-  gap: 5rem;
-}
-
-.footer .customer-service {
-  display: flex;
-  flex-direction: column;
-  gap: .3rem;
-}
-
-.footer .credit-card {
-  display: flex;
-  flex-direction: column;
-  gap: .3rem;
-}
-
-.footer .our-stores {
-  display: flex;
-  flex-direction: column;
-  gap: .3rem;
-}
-
-.footer h5 {
-  margin-bottom: .5rem;
-}
-
-.footer p {
-  color: #616365;
-  font-size: .8rem;
-  font-weight: 500;
-}
-
-.app-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer .app-btns {
-  display: flex;
-  gap: 1rem;
-
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 1200px) {
-
-  .sales-card-wrapper-upper .card .card-picture,
-  .sales-card-wrapper-lower .card .card-picture {
-    width: 200px;
-    height: 180px;
-  }
-
-  .sales-card-wrapper-upper .card,
-  .sale-card-wrapper-lower .card {
-    width: 200px;
-  }
-
-  .sales-card-wrapper-upper {
-    grid-template-columns: minmax(auto, 200px) auto;
-  }
-
-  .sales-card-wrapper-lower {
-    grid-template-columns: minmax(auto, 200px) auto;
-  }
-}
-
-@media (max-width: 992px) {
-
-  .sales-card-wrapper-upper .card .card-picture,
-  .sales-card-wrapper-lower .card .card-picture {
-    width: 175px;
-    height: 150px;
-  }
-
-  .sales-card-wrapper-upper .card,
-  .sale-card-wrapper-lower .card {
-    width: 175px;
-  }
-
-  .sales-card-wrapper-upper {
-    grid-template-columns: minmax(auto, 175px) auto;
-  }
-
-  .sales-card-wrapper-lower {
-    grid-template-columns: minmax(auto, 175px) auto;
-  }
-  .selling-section {
-    width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  .home .container {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  .sales-card-wrapper-upper {
-    grid-auto-flow: column;
-    grid-template-rows: 1fr auto auto;
-    grid-template-columns: minmax(auto, 125px) auto;
-    padding-right: 1rem;
-    padding-left: 0;
-    flex: 3;
-  }
-
-  .sales-card-wrapper-lower {
-    grid-auto-flow: column;
-    grid-template-rows: 1fr auto auto;
-    grid-template-columns: minmax(auto, 125px) auto;
-    padding-right: 0;
-    padding-left: 0;
-    flex: 3;
-  }
-  .sales-card-wrapper-upper .card .card-picture,
-  .sales-card-wrapper-lower .card .card-picture {
-    width: 125px;
-    height: 100px;
-  }
-
-  .sales-card-wrapper-upper .card,
-  .sale-card-wrapper-lower .card {
-    width: 125px;
-  }
-  .product-sales {
-    height: 650px;
-  }
-  .selling-section {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .top-selling-section {
-    margin-block: 1rem;
-    height: 200px;
-  }
-  .small-sales-card {
-    height: 90%;
-  }
-  .info-circles {
-    width: 90%;
-    gap: 1rem;
-    flex-direction: column;
-  }
-  .info-circles-mobile {
-    display: flex;
-  }
-
-  
-}
-
-@media (max-width: 667px) {}
