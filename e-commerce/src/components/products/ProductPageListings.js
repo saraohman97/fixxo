@@ -54,7 +54,7 @@ const ProductPageListings = () => {
 
 
   return (
-    <div className='center-align'>
+    <div>
         <div className='product-page-div'>
           <div className='product-page-listings-filters'>
             <div>
