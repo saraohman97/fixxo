@@ -22,6 +22,8 @@ const Home = () => {
     const { height, width } = useWindowDimensions();
     const [showMenu, setShowMenu] = useState(false)
     const  totalQuantity = useSelector(state => state.cartReducer.totalQuantity)
+    const { data: products, loading, error } = useSelector(state => state.productsReducer)
+    console.log(products)
 
     return (
         <div className='home'>
