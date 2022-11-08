@@ -9,19 +9,22 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* WHOLE PAGE */
+.product-page-breadcrumbs {
+    width: 65%;
+    margin: 2rem auto 4rem;
+}
 .product-page{
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-right: 190px;
-
+    gap: 2rem;
+    width: 65%;
+    margin: 2rem auto;
 }
 
+/* SIDE */
 .product-page-filter{
     display: flex;
     flex-direction: column;
-    width: 275px;
-    margin-left: 30px;
     gap: 3rem;
 }
 .product-page-filter h1{
@@ -58,7 +61,6 @@ justify-content: flex-start;
 .all-categories-examples h2{
     margin: 0;
 }
-
 /* Price */
 .product-page .price{
     display: flex;
@@ -79,7 +81,6 @@ justify-content: flex-start;
     flex-direction: column;
     gap: 15px;
     padding-left: 15px;
-        
 }
 .size-choices h2{
     margin: 0;
@@ -157,26 +158,16 @@ justify-content: flex-start;
 
 
 
-
-/* Product Page Cards Wrap */
-.product-page .center-align{
+/* MAIN */
+.product-page-main {
     display: flex;
-    justify-content: center;
-}
-.product-page-div{
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    width: 900px;
-    gap: 25px;
+    gap: 2rem;
 }
 .product-page-listings-filters{
     display: flex;
-    /* Tror width är ett väldigt dåligt sätt :( */
-    width: 825px;
     align-items: center;
-    justify-content: space-between;
+    gap: 20rem;
 }
 .product-page-listings{
     display: flex;
@@ -215,9 +206,9 @@ justify-content: flex-start;
 
 /* Pagination */
 .product-page .pagination {
-   display: inline-flex;
+   display: flex;
    justify-content: center;
-   align-items: ce;
+   align-items: flex-end;
    margin-bottom: 50px;
 }
 
@@ -304,17 +295,20 @@ justify-content: flex-start;
 }
 
 @media (max-width: 600px) {
+    .product-page-breadcrumbs {
+        width: 95%;
+    }
     .product-page-filter{
+        width: 350px;
         flex-direction: column;
-        width: 340px;
-        flex-wrap: wrap;
-        gap: 25px;
-        align-items: center;
     }
     .product-page-listings-filters{
         width: 360px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .product-page-div{
-        width: 300px;
+    .pagination {
+        width: 250px;
     }
 }

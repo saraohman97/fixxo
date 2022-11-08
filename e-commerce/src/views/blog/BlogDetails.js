@@ -1,4 +1,5 @@
 import React from 'react'
+import SecondNavbar from '../../components/navbar/SecondNavbar'
 import  BlogCategories from './BlogCategories'
 import BlogComment from './BlogComment'
 import './blogdetails-styles.css'
@@ -10,6 +11,8 @@ import './blogdetails-styles.css'
 
 const BlogDetails = () => {
   return(
+    <>
+      <SecondNavbar />
     <div className='blog-details-layout'>
 
         <div className='blog-details'>
@@ -82,6 +85,7 @@ const BlogDetails = () => {
         </div>
        
     </div>
+    </>
    
    )
 

@@ -5,7 +5,6 @@ import MultiRangeSlider from './multiRangeSlider/MultiRangeSlider'
 const ProductpageFilter = () => {
   return (
     <div className='product-page-filter'>
-        <div className="breadcrumbs"><i className="fa-solid fa-house"></i> Categories <i className="fa-solid fa-chevron-right"></i> Product Page</div>
 
         <div className='all-categories product-page-ind-filters' >
             <h1 className='border'>All Categories</h1>
