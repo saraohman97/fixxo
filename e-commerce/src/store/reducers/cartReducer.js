@@ -1,7 +1,7 @@
 import actionTypes from "../actionTypes";
 
 const initState = {
-  data: [],
+  cart: [],
   totalQuantity: 0,
   totalPrice: 0
 }

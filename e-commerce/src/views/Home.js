@@ -15,11 +15,13 @@ import InfoCircles from '../components/homes/InfoCircles'
 import ProductSales from '../components/homes/ProductSales'
 
 import Menu from '../components/Menu/Menu'
+import { useSelector } from 'react-redux'
 
 
 const Home = () => {
     const { height, width } = useWindowDimensions();
     const [showMenu, setShowMenu] = useState(false)
+    const  totalQuantity = useSelector(state => state.cartReducer.totalQuantity)
 
     return (
         <div className='home'>
@@ -41,7 +43,7 @@ const Home = () => {
                             <i className="fa-solid fa-magnifying-glass"></i>
                             <i className="fa-solid fa-code-compare"></i>
                             <i className="fa-regular fa-heart"><small className='number'>1</small></i>
-                            <i className="fa-solid fa-bag-shopping"><small className='number'>3</small></i>
+                            <i className="fa-solid fa-bag-shopping"><small className='number'>{totalQuantity}</small></i>
                         </div>
                     </div>
 
