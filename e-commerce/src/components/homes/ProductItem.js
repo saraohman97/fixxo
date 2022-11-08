@@ -1,9 +1,16 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import grayBox from '../../img/gray-box.svg'
 import star from '../../img/star.svg'
+import { addToCart } from '../../store/actions/cartActions'
 
 const ProductItem = () => {
+  const dispatch = useDispatch()
+  const onClick = e => {
+    dispatch(addToCart())
+  }
+
   return (
     <Link to='/details' className='product-item'>
 
@@ -11,7 +18,7 @@ const ProductItem = () => {
       <div className="featured-icons">
         <i className="fa-solid fa-code-compare"></i>
         <i className="fa-regular fa-heart"></i>
-        <i className="fa-solid fa-bag-shopping"></i>
+        <i className="fa-solid fa-bag-shopping" onClick={onClick}></i>
       </div>
       <div className="layer"></div>
 
