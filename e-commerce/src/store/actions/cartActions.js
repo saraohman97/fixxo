@@ -26,4 +26,10 @@ export const decrement = id => {
     type: actionTypes().cart.decrement,
     payload: id
   }
+
+}
+export const getCart = () => {
+  return {
+    type: actionTypes().cart.getCart
+  }
 }

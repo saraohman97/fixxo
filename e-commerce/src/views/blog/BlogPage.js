@@ -17,18 +17,18 @@ const BlogPage = () => {
     <div className='blog-details-layout'>
       
       <div className='blogcard-container'>
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
+        <BlogCard/>
+        <BlogCard/>
+        <BlogCard/>
+        <BlogCard/>
+        <BlogCard/>
+        <BlogCard/>
+        <BlogCard/>
+        <BlogCard/>
       </div>
       <div className='blog-side-categories'>
-       <BlogCategories/>
-        </div>
+        <BlogCategories/>
+      </div>
     </div>
     </>
    )

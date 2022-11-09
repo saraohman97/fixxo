@@ -8,6 +8,7 @@ const ProductPage = () => {
     return(
         <>
         <SecondNavbar />
+        <div className="product-page-breadcrumbs"><i className="fa-solid fa-house"></i> Categories <i className="fa-solid fa-chevron-right"></i> Product Page</div>
         <div className="product-page">
             <ProductpageFilter />
             <ProductPageListings />
