@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import SalesCard from './SalesCard'
 import axios from 'axios'
-
+import { set } from 'lodash';
+import { useSelector } from 'react-redux'
 
 const ProductPageListings = () => {
-  let option = 12;
-  const [salesCards, setSalesCards] =  useState();
-  const [salesCardsOption, setSalesCardsOption] =  useState();
+  const { data: products, loading, error } = useSelector(state => state.productsReducer)
+  console.log(products)
+  const [option, setOption] = useState(12);
 
+  
   useEffect(() => {
     getAllProducts()
     
@@ -15,40 +17,13 @@ const ProductPageListings = () => {
   
 
   const getAllProducts = async () => {
-    await axios.get("http://localhost:9999/products")
-    .then(resp => {
-      setSalesCards(resp.data)
-      console.log(resp.data)
-      calcNrDisplay(resp.data);   
-    }) 
+    // const products = await axios.get("http://localhost:9999/products")
+    // setSalesCards(products);
   }
-  const calcNrDisplay = (products) => {
-
-    let tempsalesCards = [];
-    for (let i = 0; i < option; i++) {
-      console.log("wtf")
-      if(products)
-      {
-        console.log(products[i])
-        tempsalesCards.push(products[i]);
-      }
-      else{
-        console.log(salesCards[i])
-        tempsalesCards.push(salesCards[i]);
-      }
-      
-    }
-    setSalesCardsOption(tempsalesCards);
-
-  }
-  
 
   
   const handleChange = (e) => {
-
-    option = e.target.value;
-    calcNrDisplay();
-    console.log(salesCards);
+    setOption(e.target.value);
   };
 
 
@@ -76,10 +51,14 @@ const ProductPageListings = () => {
           </div>
           
           <div className='product-page-listings'>
-            {salesCardsOption ? salesCardsOption.map((product) => (
+            {/* {salesCardsOption ? salesCardsOption.map((product) => (
               <SalesCard key={product.id} product={product} />
-            )) : <div></div>}
-      
+            )) : <div></div>} */}
+
+            {products && products.map((product, index) => {
+              if(index < option) {
+              return <SalesCard key={product.id} product={product} />
+              }})}
           </div>
           <div className="pagination">
             <a href="/#">&laquo;</a>

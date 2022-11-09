@@ -92,14 +92,11 @@ const Home = () => {
             <div className="featured">
                 <strong className='title'>Featured Product</strong>
                 <div className="products">
-                    <ProductItem />
-                    <ProductItem />
-                    <ProductItem />
-                    <ProductItem />
-                    <ProductItem />
-                    <ProductItem />
-                    <ProductItem />
-                    <ProductItem />
+                    {products && products.map((product, index) => {
+                    if(index < 8) {
+                    return <ProductItem key={product.id} product={product} />
+                    }})}
+
                 </div>
             </div>
 

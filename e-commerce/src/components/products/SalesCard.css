@@ -26,7 +26,7 @@
 .product-page-card-picture{
     width: 255px;
     height: 210px;
-    background-color: #F7F8FA;
+    /* background-color: #F7F8FA; */
 }
 
 .product-page-card .fa-star {
