@@ -3,13 +3,10 @@
     flex-direction: row;
     
     width: 75%;
-    margin:0;
+    margin: 2rem auto;
     margin-left: 10%;
     align-content: center;
 }
-/* .blog-details-layout div{
-    border : 2px solid rgb(0, 200, 255);
-} */
 .blog-details{
     
     align-items: center;

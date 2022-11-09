@@ -4,6 +4,7 @@ import {useState} from 'react'
 import React from 'react'
 import useWindowDimensions from '../hooks/useWindowWidth'
 import './styles/HomeMedia.css'
+import { Link } from 'react-router-dom'
 
 import headerImg1 from '../img/header-img-1.svg'
 import headerImg2 from '../img/header-img-2.svg'
@@ -60,7 +61,7 @@ const Home = () => {
                     <div className="text">
                         <h1>SALE UP <br /> To 50% off</h1>
                         <p>Online shopping free home delivery over $100</p>
-                        <button className='btn btn-pink'>SHOP NOW</button>
+                        <Link to='/products'><button className='btn btn-pink'>SHOP NOW</button></Link>
                     </div>
 
                     <img src={headerImg2} className='d-none' alt="showcase background person" />
@@ -76,13 +77,13 @@ const Home = () => {
                         <div className="text">
                             <h2>Winter Clearance <br /> Up to 70% Off!</h2>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem apriam eaque ipsa quae ab illo inventore.</p>
-                            <button className='btn btn-black'>SHOP NOW</button>
+                            <Link to='/products'><button className='btn btn-black'>SHOP NOW</button></Link>
                         </div>
                     </div>
 
                     <div className="second-placeholder">
                         <h2>New <br />Arrivals</h2>
-                        <button className='btn btn-black'>SHOP NOW</button>
+                        <Link to='/products'><button className='btn btn-black'>SHOP NOW</button></Link>
                     </div>
 
                 </div>
@@ -108,12 +109,12 @@ const Home = () => {
 
                     <div className="third-placeholder">
                         <h2 className='clr-white'>Pamela Reif's <br />Top Picks</h2>
-                        <button className='btn btn-black'>SHOP NOW</button>
+                        <Link to='/products'><button className='btn btn-black'>SHOP NOW</button></Link>
                     </div>
 
                     <div className="fourth-placeholder">
                         <h2>Let's Be <br />Conscious</h2>
-                        <button className='btn'>FLASE SALE</button>
+                        <Link to='/products'><button className='btn'>FLASE SALE</button></Link>
                     </div>
 
                 </div>

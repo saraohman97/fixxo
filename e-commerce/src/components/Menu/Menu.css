@@ -27,8 +27,54 @@
     color: black;
     text-decoration: none;
 }
+.menu-dropdown .nav-links a:hover {
+    color: #FF7373;
+}
 .menu-dropdown .top i {
     position: absolute;
     top: 1.5rem;
     right: 1rem;
+}
+
+
+
+.menu-dropdown .icons {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+}
+.menu-dropdown .icons i {
+    padding: .5rem;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+
+    box-shadow: 0 0 10px lightgray;
+}
+.menu-dropdown .icons i:hover {
+    background-color: var(--clr-title);
+    color: white;
+}
+.menu-dropdown .number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    width: 15px;
+    height: 15px;
+    font-size: xx-small;
+    background-color: var(--clr-pink);
+    border-radius: 50%;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-dropdown .dark {
+    color: gray;
+}
+.menu-dropdown .dark:hover {
+    color: #FF7373;
 }
