@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import SalesCard from './SalesCard'
 import axios from 'axios'
-
+import { set } from 'lodash';
+import { useSelector } from 'react-redux'
 
 const ProductPageListings = () => {
-  let option = 12;
-  const [salesCards, setSalesCards] =  useState();
-  const [salesCardsOption, setSalesCardsOption] =  useState();
+  const { data: products, loading, error } = useSelector(state => state.productsReducer)
+  console.log(products)
+  const [option, setOption] = useState(12);
 
+  
   useEffect(() => {
     getAllProducts()
     
@@ -15,46 +17,20 @@ const ProductPageListings = () => {
   
 
   const getAllProducts = async () => {
-    await axios.get("http://localhost:9999/products")
-    .then(resp => {
-      setSalesCards(resp.data)
-      console.log(resp.data)
-      calcNrDisplay(resp.data);   
-    }) 
+    // const products = await axios.get("http://localhost:9999/products")
+    // setSalesCards(products);
   }
-  const calcNrDisplay = (products) => {
-
-    let tempsalesCards = [];
-    for (let i = 0; i < option; i++) {
-      console.log("wtf")
-      if(products)
-      {
-        console.log(products[i])
-        tempsalesCards.push(products[i]);
-      }
-      else{
-        console.log(salesCards[i])
-        tempsalesCards.push(salesCards[i]);
-      }
-      
-    }
-    setSalesCardsOption(tempsalesCards);
-
-  }
-  
 
   
   const handleChange = (e) => {
-
-    option = e.target.value;
-    calcNrDisplay();
-    console.log(salesCards);
+    setOption(e.target.value);
   };
 
 
 
   return (
     <div className='product-page-main'>
+
 
       <div className='product-page-listings-filters'>
         
@@ -70,6 +46,7 @@ const ProductPageListings = () => {
               <option value="12">12</option>
               <option value="15">15</option>
           </select>
+
         </div>
         
       </div>

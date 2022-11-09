@@ -7,7 +7,7 @@ const SalesCard = ({product}) => {
     <div className='product-page-card'>
       <div className='product-page-inner-card'>
         <div className='product-page-card-picture'>
-          {/* <img src="#" alt="" /> */}
+          <img className='product-page-card-picture' src={product.imgUrl} alt="" />
         </div>
         <small>Category</small>
         <p>{product.name}</p>

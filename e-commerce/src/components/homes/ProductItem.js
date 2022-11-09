@@ -5,7 +5,7 @@ import grayBox from '../../img/gray-box.svg'
 import star from '../../img/star.svg'
 import { addToCart } from '../../store/actions/cartActions'
 
-const ProductItem = () => {
+const ProductItem = ({product}) => {
   const dispatch = useDispatch()
   const onClick = e => {
     dispatch(addToCart())
@@ -22,10 +22,10 @@ const ProductItem = () => {
       </div>
       <div className="layer"></div>
 
-      <img src={grayBox} className='gray-box' alt="" />
+      <img src={product.imgUrl} className='gray-box' alt="" />
       <div className="text">
           <small className='clr-gray'>Category</small>
-          <strong className='not-so-strong'>Modern Black Blouse</strong>
+          <strong className='not-so-strong'>{product.name}</strong>
           <div className="stars">
               <img src={star} alt="" />
               <img src={star} alt="" />
@@ -33,7 +33,7 @@ const ProductItem = () => {
               <img src={star} alt="" />
               <img src={star} alt="" />
           </div>
-          <div>$30.00</div>
+          <div>${product.price}</div>
         </div>
     </Link>
   )

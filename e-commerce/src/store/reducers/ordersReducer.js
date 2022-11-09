@@ -1,9 +1,14 @@
 import actionTypes from "../actionTypes";
-
+import axios from "axios";
 const initState = {
-  orders: [],
+  orders: [getAllProducts],
   loading: false,
   error: null
+}
+
+const getAllProducts = async () => {
+  const products = await axios.get("https://localhost:7271/api/Products")
+  return products.data;
 }
 
 const ordersReducer = (state = initState, action) => {
