@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux'
 const SecondNavbar = () => {
 
   const [showMenu, setShowMenu] = useState(false)
-  const  totalQuantity = useSelector(state => state.cartReducer.totalQuantity)
+  const { cart, totalQuantity, totalPrice } = useSelector(state => state.cartReducer)
 
 
   return (
@@ -30,7 +30,7 @@ const SecondNavbar = () => {
         <div className="navbar-right">
           <div className='d-none'>Login</div>
 
-          <div className='d-none'>My Cart / $23.00</div>
+          <div className='d-none'>My Cart / ${totalPrice}</div>
 
           <div className="icons">
             <i className="fa-solid fa-magnifying-glass"></i>

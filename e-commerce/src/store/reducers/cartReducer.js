@@ -21,6 +21,7 @@ const cartReducer = (state = initState, action) => {
         totalQuantity: setTotalQuantity(state.cart),
         totalPrice: setTotalPrice(state.cart)
       }
+      
     }
 
     case actionTypes().cart.removeFromCart: {
@@ -31,6 +32,7 @@ const cartReducer = (state = initState, action) => {
         totalQuantity: setTotalQuantity(state.cart),
         totalPrice: setTotalPrice(state.cart)
       }
+      
     }
 
     case actionTypes().cart.increment: {
@@ -39,6 +41,7 @@ const cartReducer = (state = initState, action) => {
       ref.quantity >= 99
       ? ref.quantity = 99
       : ref.quantity += 1
+      break;
     }
 
     case actionTypes().cart.decrement: {
@@ -47,6 +50,7 @@ const cartReducer = (state = initState, action) => {
       ref.quantity <= 1
       ? ref.quantity = 1
       : ref.quantity -= 1
+      break;
     }
 
     default:
