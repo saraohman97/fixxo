@@ -8,13 +8,13 @@ import { addToCart } from '../../store/actions/cartActions'
 const ProductItem = ({product}) => {
   const dispatch = useDispatch()
   const onClick = e => {
-    dispatch(addToCart())
+    dispatch(addToCart({product, quantity: 1}))
   }
 
   return (
-    <Link to='/details' className='product-item'>
+    <div className='product-item'>
 
-      <div className="quick-view">QUICK VIEW</div>  
+      <Link to='/details' className="quick-view">QUICK VIEW</Link>  
       <div className="featured-icons">
         <i className="fa-solid fa-code-compare"></i>
         <i className="fa-regular fa-heart"></i>
@@ -35,7 +35,7 @@ const ProductItem = ({product}) => {
           </div>
           <div>${product.price}</div>
         </div>
-    </Link>
+    </div>
   )
 }
 
