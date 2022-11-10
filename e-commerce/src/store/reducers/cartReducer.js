@@ -11,14 +11,12 @@ const cartReducer = (state = initState, action) => {
     case actionTypes().cart.addToCart: {
       const ref = state.cart.find(item => item._id === action.payload._id)
       const newProduct = { ...action.payload }
-      console.log(ref)
-      console.log(newProduct)
+      
 
       ref
-        ? ref.quantity += 1
+        ? ref.quantity += action.payload.quantity
         : state.cart = [...state.cart, newProduct]
 
-      // localStorage.setItem("cart", [...state.cart, newProduct])
 
       return {
         ...state,
