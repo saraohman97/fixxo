@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* Temp lösning för att fixa css på product page */
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
 
 html,
 body {
@@ -95,11 +89,6 @@ body {
   width: 40px;
   background: #fff;
 }
-/* Temp lösning för att fixa css på product page */
-/* select {
-  margin-left: 1.6rem;
-  padding: 0.5rem 2rem;
-} */
 .intro-container .color {
   display: grid;
   grid-template-columns: auto auto;
@@ -213,6 +202,7 @@ body {
   grid-template-columns: auto auto auto auto;
   text-align: center;
   margin-top: 1rem;
+  gap: 1rem;
 }
 .related-pdts-img .card {
   max-height: 323px;
@@ -229,37 +219,29 @@ body {
 }
 
 .intro-container .pdt-images {
-  height: 620px;
-  width: 540px;
+  height: 100%;
+  width: 100%;
 }
 
 /* media queries */
 @media (max-width: 576px) {
   .intro-container {
-    max-width: 576px;
-    margin: 0 auto;
-    font-size: 0.9rem;
-  }
 
-  .pdtdetails-container {
-    display: block;
-    margin-top: 0rem;
+    font-size: 0.9rem;
+
+    width: 95%;
+    margin: 0 auto;
   }
   .pdt-images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    margin-top: -6rem;
+    overflow: hidden;
   }
+
   .pdt-images img.main-img {
     width: 380px;
     margin-bottom: 1rem;
   }
   .intro-container .small-images {
-    width: 400px;
-    justify-content: center;
+    display: none;
   }
 
   .intro-container .small-img {
@@ -288,18 +270,15 @@ body {
     margin-right: 0.6rem;
   }
 
-  div.related-pdts-img {
-    display: block;
-  }
-  .intro-container .card {
-    transform: translateX(30%);
+  .related-pdts-img {
+    display: none;
+    overflow: hidden;
   }
 }
 
 @media (max-width: 768px) {
   .intro-container {
     max-width: 50%;
-    /* max-width: 768px; */
   }
   .pdtdetails-container {
     display: block;
@@ -315,7 +294,7 @@ body {
   }
 
   .pdt-specs {
-    margin-top: -7rem;
+    margin-top: -3rem;
   }
 
   .product-description ul.steps-list {

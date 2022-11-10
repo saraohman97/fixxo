@@ -1,9 +1,16 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import grayBox from '../../img/gray-box.svg'
 import star from '../../img/star.svg'
+import { addToCart } from '../../store/actions/cartActions'
 
-const ProductItem = () => {
+const ProductItem = ({product}) => {
+  const dispatch = useDispatch()
+  const onClick = e => {
+    dispatch(addToCart())
+  }
+
   return (
     <Link to='/details' className='product-item'>
 
@@ -11,14 +18,14 @@ const ProductItem = () => {
       <div className="featured-icons">
         <i className="fa-solid fa-code-compare"></i>
         <i className="fa-regular fa-heart"></i>
-        <i className="fa-solid fa-bag-shopping"></i>
+        <i className="fa-solid fa-bag-shopping" onClick={onClick}></i>
       </div>
       <div className="layer"></div>
 
-      <img src={grayBox} className='gray-box' alt="" />
+      <img src={product.imgUrl} className='gray-box' alt="" />
       <div className="text">
           <small className='clr-gray'>Category</small>
-          <strong className='not-so-strong'>Modern Black Blouse</strong>
+          <strong className='not-so-strong'>{product.name}</strong>
           <div className="stars">
               <img src={star} alt="" />
               <img src={star} alt="" />
@@ -26,7 +33,7 @@ const ProductItem = () => {
               <img src={star} alt="" />
               <img src={star} alt="" />
           </div>
-          <div>$30.00</div>
+          <div>${product.price}</div>
         </div>
     </Link>
   )

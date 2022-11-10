@@ -16,9 +16,9 @@ const  BlogCategories = () => {
         <hr/>
       </strong>
 
-      <li> book </li>
+      <li>book </li>
       <li>car </li>
-      <li> book </li>
+      <li>book </li>
       <li>car </li>
     </div>
 
@@ -28,9 +28,9 @@ const  BlogCategories = () => {
           <hr/>
       </strong>
 
-      <li> New fashin for the summer </li>
+      <li>New fashin for the summer </li>
       <li>Color and Fashin </li>
-      <li> Weather styles </li>
+      <li>Weather styles </li>
       <li>Bookes  </li>   
     </div>
 
@@ -40,9 +40,9 @@ const  BlogCategories = () => {
         <hr/>
       </strong>
 
-      <button> book </button>
+      <button>book </button>
       <button>car </button>
-      <button> book </button>
+      <button>book </button>
       <button>car </button>
       
     </div>

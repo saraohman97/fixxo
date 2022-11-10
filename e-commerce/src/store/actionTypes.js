@@ -14,7 +14,8 @@ const actionTypes = () => {
       addToCart: 'ADD_PRODUCT_TO_CART',
       removeFromCart: 'REMOVE_PRODUCT_FROM_CART',
       increment: 'INCREMENT',
-      decrement: 'DECREMENT'
+      decrement: 'DECREMENT',
+      getCart: 'GET_CART'
     },
     orders: {
       getAllUserOrders: 'GET_ALL_USER_ORDERS',

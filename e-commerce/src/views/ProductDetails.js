@@ -1,9 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 import SecondNavbar from '../components/navbar/SecondNavbar'
 import './styles/ProductDetails.css'
+import { addToCart } from '../store/actions/cartActions'
 
 const ProductDetails = () => {
+
+  const dispatch = useDispatch()
+  
 
   return (
     <>
@@ -69,7 +74,7 @@ const ProductDetails = () => {
             <span><button className='qty-btn'>-</button></span>
             <span><button className='qty-btn one'>1</button></span>
             <span><button className='qty-btn'>+</button></span>
-            <span><button className=' add-to-cart'>ADD TO CART</button></span>
+            <span><button onClick={() => dispatch(addToCart())} className=' add-to-cart'>ADD TO CART</button></span>
           </div>
 
           <div className="share" >

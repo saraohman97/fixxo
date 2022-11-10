@@ -84,6 +84,10 @@
     align-items: center;
     justify-content: center;
 }
+.second-navbar .fa-bag-shopping,
+.second-navbar .fa-bars {
+    cursor: pointer;
+}
 
 
 /* MEDIA QUERIES */

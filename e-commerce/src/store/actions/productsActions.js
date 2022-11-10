@@ -7,7 +7,7 @@ export const getProducts = () => {
       type: actionTypes().products.getAllProducts
     })
     try {
-      const res = await axios.get('http://localhost:****/api/products')
+      const res = await axios.get('https://localhost:7271/api/products')
 
       if(res.status === 200){
         dispatch(getProductsSuccess(res.data))
