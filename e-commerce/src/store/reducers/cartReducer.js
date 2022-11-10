@@ -9,10 +9,10 @@ const initState = {
 const cartReducer = (state = initState, action) => {
   switch (action.type) {
     case actionTypes().cart.addToCart: {
-      const ref = state.cart.find(item => item._id === action.payload._id)
+      const ref = state.cart.find(item => item.product.id === action.payload.product.id)
       const newProduct = { ...action.payload }
       
-
+      console.log(ref)
       ref
         ? ref.quantity += action.payload.quantity
         : state.cart = [...state.cart, newProduct]

@@ -8,6 +8,7 @@ const SalesCard = ({product}) => {
   
   const dispatch = useDispatch()
   const onClick = e => {
+    console.log(product)
     dispatch(addToCart({product, quantity: 1}))
   }
 
