@@ -316,7 +316,7 @@ body {
 
 .home .quick-view {
   position: absolute;
-  top: 138px;
+  bottom: 120px;
   display: none;
 
   width: 100%;
@@ -383,7 +383,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 6.4rem;
+  bottom: 120px;
   display: none;
 }
 
@@ -510,30 +510,38 @@ body {
 
 .sales-card-wrapper-upper {
   display: grid;
-  grid-template-columns: minmax(auto, 280px) auto;
+  grid-template-columns: minmax(auto, 255px) auto;
   gap: 1rem;
   padding-right: 3rem;
 }
 
 .sales-card-wrapper-lower {
   display: grid;
-  grid-template-columns: minmax(auto, 280px) auto;
+  grid-template-columns: minmax(auto, 255px) 255px;
   gap: 1rem;
   padding-left: 3rem;
+  
 }
 
 .sales-card-wrapper-upper .card,
-.sale-card-wrapper-lower .card {
+.sales-card-wrapper-lower .card {
   display: flex;
   flex-direction: column;
   gap: .3rem;
+  position: relative;
 }
 
 .sales-card-wrapper-upper .card .card-picture,
 .sales-card-wrapper-lower .card .card-picture {
-  background-color: var(--clr-showcase-bg);
+  /* background-color: var(--clr-showcase-bg); */
   width: 255px;
   height: 210px;
+  
+}
+.card-picture-img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .sales-card-wrapper-upper .card h6,
@@ -678,3 +686,82 @@ body {
   font-weight: 500;
   font-size: .8rem;
 }
+.home-sales-card .quick-view {
+  position: absolute;
+  bottom: 115px;
+  display: none;
+  text-align: center;
+  width: 100%;
+  padding-block: .7rem;
+  font-weight: 200;
+  font-size: small;
+  background-color: var(--clr-pink);
+  color: white;
+  z-index: 1;
+}
+
+.home-sales-card .quick-view::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 13px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+}
+
+.home-sales-card .quick-view::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 13px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.home-sales-card .featured-icons {
+  position: absolute;
+  top: .5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  color: var(--clr-title);
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.home-sales-card .featured-icons i {
+  padding: .5rem;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 1px 5px 10px rgb(177, 177, 177);
+  display: none;
+  z-index: 1;
+}
+
+.home-sales-card .featured-icons i:hover {
+  background-color: var(--clr-title);
+  color: white;
+}
+
+.home-sales-card .layer {
+  background-color: rgba(0, 0, 0, 0.149);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 115px;
+  display: none;
+}
+.home-sales-card:hover .quick-view,
+.home-sales-card:hover .featured-icons i,
+.home-sales-card:hover .layer {
+  display: block;
+
+}
+

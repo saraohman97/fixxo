@@ -9,14 +9,14 @@ const initState = {
 const cartReducer = (state = initState, action) => {
   switch (action.type) {
     case actionTypes().cart.addToCart: {
-      const ref = state.cart.find(item => item._id === action.payload._id)
+      const ref = state.cart.find(item => item.product.id === action.payload.product.id)
       const newProduct = { ...action.payload }
-
+      
+      console.log(ref)
       ref
-        ? ref.quantity += 1
+        ? ref.quantity += action.payload.quantity
         : state.cart = [...state.cart, newProduct]
 
-      localStorage.setItem("cart", [...state.cart, newProduct])
 
       return {
         ...state,
@@ -88,9 +88,10 @@ const setTotalQuantity = cart => {
 
 const setTotalPrice = cart => {
   let price = 0
-
+  console.log(cart)
   cart.forEach(product => {
-    price += product.price * product.quantity
+    console.log(product)
+    price += product.product.price * product.quantity
   })
 
   return price
