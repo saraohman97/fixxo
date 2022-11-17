@@ -22,6 +22,7 @@ export const increment = id => {
 }
 
 export const decrement = id => {
+  console.log(id,"AJSHDUJKASDHJASDHkj")
   return {
     type: actionTypes().cart.decrement,
     payload: id

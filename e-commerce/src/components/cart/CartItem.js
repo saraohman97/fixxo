@@ -13,16 +13,16 @@ const CartItem = ({item}) => {
       <div className='cart-item-content d-flex align-items-center'>
         <img src={item.product.imgUrl} className="img-fluid cart-image" />
         <div>
-          <div><strong>{item.name}</strong></div>
-          <div><small>{item.quantity} x {item.price}</small></div>
+          <div><strong>{item.product.name}</strong></div>
+          <div><small>{item.quantity} x {item.product.price}</small></div>
         </div>
       </div>
       <div>
         <div className="" role="group">
-          <button className='btn-cart' onClick={() => dispatch(decrement(item._id))}>-</button>
-          <button className='btn-cart' onClick={() => dispatch(increment(item._id))}>+</button>
+          <button className='btn-cart' onClick={() => dispatch(decrement(item.product.id))}>-</button>
+          <button className='btn-cart' onClick={() => dispatch(increment(item.product.id))}>+</button>
         </div>
-        <button className='btn-trash' onClick={() => dispatch(removeFromCart(item._id))}>TRASH CAN</button>
+        <button className='btn-trash' onClick={() => dispatch(removeFromCart(item.product.id))}>TRASH CAN</button>
       </div>
     </div>
   )

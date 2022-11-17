@@ -59,7 +59,7 @@ const ProductPageListings = () => {
           return <div></div>
         })}
       </div>
-      <div>products</div>
+      <div></div>
 
       <div className="pagination">
         <a href="/#">&laquo;</a>
