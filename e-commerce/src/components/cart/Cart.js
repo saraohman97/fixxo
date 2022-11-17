@@ -6,7 +6,7 @@ import CartItem from './CartItem'
 
 
 const Cart = () => {
-  const { cart, totalQuantity, totalPrice } = useSelector(state => state.cartReducer)
+  const { cart, totalPrice } = useSelector(state => state.cartReducer)
   return (
     <div className='cart-main'>
       <div>

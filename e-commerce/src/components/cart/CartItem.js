@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { addToCart, decrement, removeFromCart } from '../../store/actions/cartActions'
+import { increment, decrement, removeFromCart } from '../../store/actions/cartActions'
 
 
 
@@ -20,7 +20,7 @@ const CartItem = ({item}) => {
       <div>
         <div className="" role="group">
           <button className='btn-cart' onClick={() => dispatch(decrement(item._id))}>-</button>
-          <button className='btn-cart' onClick={() => dispatch(addToCart(item))}>+</button>
+          <button className='btn-cart' onClick={() => dispatch(increment(item._id))}>+</button>
         </div>
         <button className='btn-trash' onClick={() => dispatch(removeFromCart(item._id))}>TRASH CAN</button>
       </div>
