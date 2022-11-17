@@ -42,6 +42,10 @@ body {
 .pdt-specs {
   line-height: 1.9rem;
 }
+.main-img {
+  object-fit: contain;
+  height: 500px;
+}
 
 .pdt-specs h1 {
   font-family: "Poppins", sans-serif;
@@ -101,6 +105,16 @@ body {
   font-weight: 300;
   padding: 0.5rem;
   background: #fff;
+}
+.qty-btn.qty-input {
+  width: 50px;
+  text-align: center;
+  
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .qty-btn.one {
   padding: 0.5rem 1rem;

@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom'
 import '../navbar/secondNavbar.css'
 import Menu from '../Menu/Menu'
 import { useSelector } from 'react-redux'
+import Cart from '../cart/Cart'
 
 const SecondNavbar = () => {
 
   const [showMenu, setShowMenu] = useState(false)
+  const [showCart, setShowCart] = useState(false)
   const { cart, totalQuantity, totalPrice } = useSelector(state => state.cartReducer)
 
 
@@ -36,8 +38,9 @@ const SecondNavbar = () => {
             <i className="fa-solid fa-magnifying-glass"></i>
             <i className="fa-solid fa-code-compare d-none"></i>
             <i className="fa-regular fa-heart d-none"><small className='number'>1</small></i>
-            <i className="fa-solid fa-bag-shopping"><small className='number'>{totalQuantity}</small></i>
+            <i className="fa-solid fa-bag-shopping" onClick={() => setShowCart(state => !showCart)}><small className='number'>{totalQuantity}</small></i>
           </div>
+          {showCart && <Cart />}
 
           <button className='button' onClick={() => setShowMenu(true)}><i className="fa-solid fa-bars"></i></button>
           {showMenu && <Menu setShowMenu={setShowMenu} />}

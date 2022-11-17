@@ -1,31 +1,42 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
+import React, { useEffect, useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
 import SecondNavbar from '../components/navbar/SecondNavbar'
 import './styles/ProductDetails.css'
 import { addToCart } from '../store/actions/cartActions'
+import { getProduct } from '../store/actions/productActions'
 
 const ProductDetails = () => {
-
+  const { id } = useParams()
   const dispatch = useDispatch()
+  const [quantity, setQuantity] = useState(1)
+  const {data:product, loading, error} = useSelector(state => state.productReducer)
+
+
+  useEffect(() => {
+    dispatch(getProduct(id))
+  
+    
+  }, [id])
+  
   
 
   return (
     <>
     <SecondNavbar />
-   
+   {product && 
     <div className="intro-container">
       <div><h1 className='promo'>Get 25% OFF at the Fixxo selection-shop Now!</h1></div>
       <div className="home">
         <ul className='home-list'>
           <li> <i className="fa-solid fa-house"></i>Home <i className="fa-solid fa-greater-than"></i></li>
-          <li>product signal</li>
+          <li>Product details</li>
         </ul>
       </div>
       <div className="pdtdetails-container">
         <div className="pdt-images" >
           {/* <img src="../images/main.png" alt="main-img" style={{backgroundColor:'red'}} /> */}
-          <img src="https://via.placeholder.com/540X444" alt="" className='main-img' />
+          <img src={product.colors[0].imgUrl} alt="" className='main-img' />
           <div className="small-images">
             <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
             <img className='small-img' src="https://via.placeholder.com/160X132" alt="" />
@@ -34,7 +45,7 @@ const ProductDetails = () => {
 
         </div>
         <div className="pdt-specs">
-          <h1>Modern Black Blouse</h1>
+          <h1>{product.name}</h1>
           <div className="brand">
             <span>SKU: 12345670</span>
             <span>BRAND:The Northland</span>
@@ -46,9 +57,9 @@ const ProductDetails = () => {
             <i className="fa-solid fa-star"></i>
             <i className="fa-solid fa-star"></i>
           </div>
-          <p className="price" stye={{fontSize:'1.1rem'}}>$35.00</p>
+          <p className="price" stye={{fontSize:'1.1rem'}}>${product.price}</p>
           <div className="description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aut quod sequi optio deleniti perspiciatis ipsam doloribus iure alias nulla non magni, quaerat eum eaque dolores molestias obcaecati veritatis? Necessitatibus blanditiis libero quasi a, similique rerum   <Link t0='/details'>(read more)</Link></p>
+            <p>{product.description}</p>
           </div>
 
           <div className="sizes">
@@ -71,10 +82,10 @@ const ProductDetails = () => {
           </div>
           <div className="qty">
             <span className='size'>Qty:</span>
-            <span><button className='qty-btn'>-</button></span>
-            <span><button className='qty-btn one'>1</button></span>
-            <span><button className='qty-btn'>+</button></span>
-            <span><button onClick={() => dispatch(addToCart())} className=' add-to-cart'>ADD TO CART</button></span>
+            <span><button className='qty-btn' onClick={() => setQuantity(state => state - 1)}>-</button></span>
+            <span><input className='qty-btn qty-input' type="number" value={quantity} onChange={e => setQuantity(e.target.value)} /></span>
+            <span><button className='qty-btn' onClick={() => setQuantity(state => state + 1)}>+</button></span>
+            <span><button onClick={() => dispatch(addToCart({product, quantity}))} className=' add-to-cart'>ADD TO CART</button></span>
           </div>
 
           <div className="share" >
@@ -101,15 +112,9 @@ const ProductDetails = () => {
         </ul>
         <div className='steps'>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis aspernatur, adipisci numquam pariatur odio magni, quidem facilis omnis porro nisi ducimus maiores natus hic sint ipsum ex non sequi officia exercitationem animi neque eum atque? Quas ipsam adipisci velit vel temporibus perferendis, porro dolorem quae cum saepe ipsa deleniti!
-          </p>
-          <ul >
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, animi.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, eos.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, blanditiis.</li>
-          </ul>
-          <p style={{ marginTop: "1rem" }}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta neque dolorem aperiam hic at? Rerum harum numquam dolorem, vitae perspiciatis eveniet, nemo qui, fuga quae maxime earum porro. Iusto, sed.
+            {
+              product.additionalInformationResponses.length > 0 &&
+            product.additionalInformationResponses[0].data}
           </p>
         </div>
       </div>
@@ -186,6 +191,7 @@ const ProductDetails = () => {
       </div>
 
     </div>
+    }
     </>
   )
 }

@@ -50,6 +50,7 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+    position: relative;
 }
 .second-navbar .container .navbar-right .icons {
     display: flex;
