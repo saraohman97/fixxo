@@ -15,10 +15,12 @@
   justify-content: space-between;
   align-items: center;
   margin-top: .5rem;
+  width: 100%;
 }
 .cart-item-content {
   display: flex;
   align-items: center;
+  width: 70%;
 }
 .cart-image {
   width: 100px;
