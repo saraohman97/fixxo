@@ -22,7 +22,7 @@ const SecondNavbar = () => {
 
           <div className="nav-links">
             <Link to='/'>Home</Link>
-            <Link to='/'>Categories</Link>
+            <Link to='/products'>Categories</Link>
             <Link to='/products'>Products</Link>
             <Link to='/'>Pages</Link>
             <Link to='/blogpage'>Blog</Link>
