@@ -27,7 +27,7 @@ const cartReducer = (state = initState, action) => {
     }
 
     case actionTypes().cart.removeFromCart: {
-      state.cart = state.cart.filter(product => product._id !== action.payload)
+      state.cart = state.cart.filter(item => item.product.id !== action.payload)
 
       return {
         ...state,
@@ -38,7 +38,7 @@ const cartReducer = (state = initState, action) => {
     }
 
     case actionTypes().cart.increment: {
-      const ref = state.cart.find(item => item._id === action.payload)
+      const ref = state.cart.find(item => item.product.id === action.payload)
 
       ref.quantity >= 99
         ? ref.quantity = 99
@@ -52,7 +52,8 @@ const cartReducer = (state = initState, action) => {
     }
 
     case actionTypes().cart.decrement: {
-      const ref = state.cart.find(item => item._id === action.payload)
+      const ref = state.cart.find(item => item.product.id === action.payload)
+    
 
       ref.quantity <= 1
         ? ref.quantity = 1

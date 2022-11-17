@@ -14,7 +14,7 @@ const HomeSalesCard = ({product}) => {
     <div className='home-sales-card card'>
       <div className='card-picture'>
         <img src={product.imgUrl} alt="" className='card-picture-img' />
-      <Link to='/details' className="quick-view">QUICK VIEW</Link>  
+      <Link to={'/details' + product.id}  className="quick-view">QUICK VIEW</Link>  
       <div className="featured-icons">
         <i className="fa-solid fa-code-compare"></i>
         <i className="fa-regular fa-heart"></i>

@@ -14,7 +14,7 @@ const ProductItem = ({product}) => {
   return (
     <div className='product-item'>
 
-      <Link to='/details' className="quick-view">QUICK VIEW</Link>  
+      <Link to={'/details/' + product.id} className="quick-view">QUICK VIEW</Link>  
       <div className="featured-icons">
         <i className="fa-solid fa-code-compare"></i>
         <i className="fa-regular fa-heart"></i>

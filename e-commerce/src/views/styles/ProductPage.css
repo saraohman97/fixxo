@@ -381,13 +381,8 @@ body {
 
 
 /* Breakpoints */
-@media (max-width: 1385px) {
-    .product-page {
-        margin-right: 50px;
-    }
 
-
-
+.product-page{
 }
 
 @media (max-width: 1200px) {
@@ -403,9 +398,6 @@ body {
         width: 525px;
     }
 
-    .product-page {
-        margin-right: 0px;
-    }
 
     .product-page {
         align-items: center;
@@ -465,21 +457,19 @@ body {
     .product-page-breadcrumbs {
         width: 95%;
     }
-
+    
     .product-page-filter {
         width: 350px;
         flex-direction: column;
+        align-items: center;
     }
 
     .product-page-listings-filters {
         width: 360px;
         gap: 10px;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
-    .pagination {
-        width: 250px;
-    }
 
 }
